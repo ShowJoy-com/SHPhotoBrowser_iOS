@@ -11,7 +11,7 @@ pod 'SHPhotoBrowser', '~> 0.0.1'
 end
 ```
 
-具体调用实现
+#### 具体调用实现
 
 ```objective-c
 NSArray * marrImages = [NSArray arrayWithObjects:@"https://cdn1.showjoy.com/images/be/be8852f9d3984865951a8206772ccbbd.jpg",@"https://cdn1.showjoy.com/images/6e/6e66ef820e36418c8b0b6863c8253a75.jpg",@"https://cdn1.showjoy.com/images/5b/5b63d7766cfa4cf1b9a2bc07c7c6a1c2.jpg",@"https://cdn1.showjoy.com/images/8f/8ff2116f1ad141bb96a78a0cb759301b.jpg",[UIImage imageNamed:@"photo1.jpg"], nil];
@@ -34,5 +34,13 @@ NSArray * marrImages = [NSArray arrayWithObjects:@"https://cdn1.showjoy.com/imag
 -(void)cancelPhotoBrowser{
     
 }
-
 ```
+#### 使用异常时参考这里
+
+1.长按保存图片保存失败
+
+解决方案：
+
+ 	确认info.plst文件里是否添加相册访问权限
+
+​	Privacy - Photo Library Usage Description	App需要您的同意,才能访问相册

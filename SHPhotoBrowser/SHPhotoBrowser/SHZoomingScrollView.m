@@ -220,21 +220,21 @@
         self.progress = 1.0f;
         return;
     }
-//    
-//    UIImage *showImage = [[SDImageCache sharedImageCache] imageFromDiskCacheForKey:[url absoluteString]];
-//    
-//    
-//    if (showImage) {
-//        self.photoImageView.image = showImage;
-//        [self setMaxAndMinZoomScales];
-//        self.progress = 1.0f;
-//        return;
-//    }
-    
+    // 使用PINRemoteImage
+    PINCache *cache = [[PINRemoteImageManager sharedImageManager] pinCache];
+    UIImage *showImage = [UIImage imageWithData:[cache objectFromDiskForKey:[url absoluteString]]];
+      // 使用SDWebImage
+    //UIImage *showImage = [[SDImageCache sharedImageCache] imageFromDiskCacheForKey:[url absoluteString]];
+    if (showImage) {
+        self.photoImageView.image = showImage;
+        [self setMaxAndMinZoomScales];
+        self.progress = 1.0f;
+        return;
+    }
     self.photoImageView.image = placeholder;
     [self setMaxAndMinZoomScales];
-    
     __weak typeof(self) weakSelf = self;
+    // 使用SDWebImage
 //    [weakSelf.photoImageView sd_setImageWithURL:url placeholderImage:placeholder options:SDWebImageRetryFailed | SDWebImageLowPriority| SDWebImageHandleCookies progress:^(NSInteger receivedSize, NSInteger expectedSize) {
 //        dispatch_async(dispatch_get_main_queue(), ^{
 //            if (expectedSize>0) {
@@ -257,10 +257,13 @@
 //            }];
 //        }
 //    }];
+     // 使用PINRemoteImage
     [self.photoImageView pin_setImageFromURL:url completion:^(PINRemoteImageManagerResult * _Nonnull result) {
         if (result.error) {
              [self setMaxAndMinZoomScales];
         }else{
+            self.photoImageView.image = showImage;
+            self.progress = 1.0f;
             [weakSelf.photoImageView setNeedsDisplay];
             [UIView animateWithDuration:0.25 animations:^{
                 [weakSelf setMaxAndMinZoomScales];

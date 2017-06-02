@@ -325,9 +325,12 @@
         [self.savaImageTipLabel performSelector:@selector(removeFromSuperview) withObject:nil afterDelay:1.0];
         return;
     }
-    UIImageWriteToSavedPhotosAlbum(zoomingScrollView.currentImage, self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);
-    [self addSubview:self.indicatorView];
-    [self.indicatorView startAnimating];
+    if (zoomingScrollView.currentImage && [zoomingScrollView.currentImage isKindOfClass:[UIImage class]]) {
+        UIImageWriteToSavedPhotosAlbum(zoomingScrollView.currentImage, self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);
+        [self addSubview:self.indicatorView];
+        [self.indicatorView startAnimating];
+    }
+    
 }
 
 - (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo;
