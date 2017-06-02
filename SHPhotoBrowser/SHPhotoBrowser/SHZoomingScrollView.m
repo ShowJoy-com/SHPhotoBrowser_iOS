@@ -262,7 +262,7 @@
         if (result.error) {
              [self setMaxAndMinZoomScales];
         }else{
-            self.photoImageView.image = showImage;
+            self.photoImageView.image = result.image;
             self.progress = 1.0f;
             [weakSelf.photoImageView setNeedsDisplay];
             [UIView animateWithDuration:0.25 animations:^{
