@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "SHPhotoBrowser"
-s.version      = "0.0.5"
+s.version      = "0.0.6"
 s.summary      = "SHPhotoBrowser"
 s.description  = "SHPhotoBrowser ShowJoy"
 s.homepage     = "https://github.com/ShowJoy-com/SHPhotoBrowser_iOS.git"
@@ -10,6 +10,6 @@ s.source       = { :git => "https://github.com/ShowJoy-com/SHPhotoBrowser_iOS.gi
 s.source_files  = "SHPhotoBrowser/SHPhotoBrowser/**/*.{h,m}"
 s.requires_arc = true
 s.ios.deployment_target = '7.0'
-s.dependency 'PINRemoteImage/iOS', '~> 3.0.0-beta.8'
+s.dependency 'PINRemoteImage/iOS', '~> 3.0.0-beta.7'
 s.dependency 'PINRemoteImage/PINCache'
 end
