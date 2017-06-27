@@ -812,6 +812,7 @@
     SHPhotoBrowser *browser = [[SHPhotoBrowser alloc] init];
     browser.imageCount = images.count;
     browser.currentImageIndex = currentImageIndex;
+    browser.browserViewStyle=SHPhotoBrowserViewStyleBlack;
     browser.images = images;
     [browser show];
     return browser;
