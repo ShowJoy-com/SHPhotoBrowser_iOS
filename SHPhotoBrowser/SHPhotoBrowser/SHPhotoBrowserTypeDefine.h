@@ -56,3 +56,18 @@ typedef NS_ENUM(NSUInteger, SHPhotoBrowserPageControlStyle){
     SHPhotoBrowserPageControlStyleNone = 3
     
 };
+
+/**
+ *  浏览样式
+ */
+typedef NS_ENUM(NSUInteger, SHPhotoBrowserViewStyle){
+    /**
+     * 黑色背景样式
+     */
+    SHPhotoBrowserViewStyleBlack = 1,
+    /**
+     * 白色背景样式
+     */
+    SHPhotoBrowserViewStyleWhite = 2,
+    
+};

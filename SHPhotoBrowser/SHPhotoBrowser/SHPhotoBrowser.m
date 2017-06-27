@@ -135,7 +135,6 @@
 
 - (void)initial
 {
-    self.backgroundColor = SHPhotoBrowserBackgrounColor;
     self.visibleZoomingScrollViews = [[NSMutableSet alloc] init];
     self.reusableZoomingScrollViews = [[NSMutableSet alloc] init];
     [self placeholderImage];
@@ -188,34 +187,46 @@
 - (void)setUpToolBars
 {
     UILabel *indeSHabel = [[UILabel alloc] init];
-    indeSHabel.bounds = CGRectMake(0, 0, 80, 30);
-    indeSHabel.SH_centerX = self.SH_width * 0.5;
-    indeSHabel.SH_centerY = SHScreenH-20-35;
     indeSHabel.textAlignment = NSTextAlignmentCenter;
-    indeSHabel.textColor = [UIColor whiteColor];
-    indeSHabel.font = [UIFont systemFontOfSize:18];
-    indeSHabel.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
-    indeSHabel.layer.cornerRadius = indeSHabel.bounds.size.height * 0.5;
-    indeSHabel.clipsToBounds = YES;
-    self.indeSHabel = indeSHabel;
+    if (_browserViewStyle==SHPhotoBrowserViewStyleBlack) {
+        indeSHabel.bounds = CGRectMake(0, 0, 80, 30);
+        indeSHabel.SH_centerX = self.SH_width * 0.5;
+        indeSHabel.SH_centerY = SHScreenH-20-35;
+        indeSHabel.textColor = [UIColor whiteColor];
+        indeSHabel.font = [UIFont systemFontOfSize:18];
+        indeSHabel.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
+        indeSHabel.layer.cornerRadius = indeSHabel.bounds.size.height * 0.5;
+        indeSHabel.clipsToBounds = YES;
+    }else if (_browserViewStyle==SHPhotoBrowserViewStyleWhite){
+        indeSHabel.bounds = CGRectMake(0, 0, 25, 25);
+        indeSHabel.SH_centerX = self.SH_width * 0.5;
+        indeSHabel.SH_centerY = SHScreenH-25-35;
+        indeSHabel.textColor = [UIColor whiteColor];
+        indeSHabel.font = [UIFont systemFontOfSize:10];
+        indeSHabel.backgroundColor = RGBColor(204, 204, 204);
+        indeSHabel.layer.cornerRadius = indeSHabel.bounds.size.height * 0.5;
+        indeSHabel.clipsToBounds = YES;
+    }
     [self addSubview:indeSHabel];
-    
+    self.indeSHabel = indeSHabel;
 }
 
 /**
  * 初始化保存提示
  */
 -(void)initShowLabelSave{
-    NSString * mstrtext = @"长按屏幕即可保存图片";
-    UILabel * mlableIndex = [[UILabel alloc] initWithFrame:CGRectMake(0, 64, SHScreenH, 20)];
-    mlableIndex.font=[UIFont systemFontOfSize:14];
-    mlableIndex.SH_centerX = self.SH_width * 0.5;
-    mlableIndex.text=mstrtext;
-    mlableIndex.textColor=[UIColor whiteColor];
-    mlableIndex.textAlignment=NSTextAlignmentCenter;
-    [self addSubview:mlableIndex];
-    _mlableShowSave = mlableIndex;
-    [self performSelector:@selector(CancelSaveShow) withObject:@"" afterDelay:3.0];
+    if (_browserViewStyle==SHPhotoBrowserViewStyleBlack) {
+        NSString * mstrtext = @"长按屏幕即可保存图片";
+        UILabel * mlableIndex = [[UILabel alloc] initWithFrame:CGRectMake(0, 64, SHScreenH, 20)];
+        mlableIndex.font=[UIFont systemFontOfSize:14];
+        mlableIndex.SH_centerX = self.SH_width * 0.5;
+        mlableIndex.text=mstrtext;
+        mlableIndex.textColor=[UIColor whiteColor];
+        mlableIndex.textAlignment=NSTextAlignmentCenter;
+        [self addSubview:mlableIndex];
+        _mlableShowSave = mlableIndex;
+        [self performSelector:@selector(CancelSaveShow) withObject:@"" afterDelay:3.0];
+    }
 }
 
 - (void)dealloc
@@ -593,7 +604,7 @@
     targetRect = CGRectMake(x, y, width, height);
     self.scrollView.hidden = YES;
     self.alpha = 1.0;
-
+    tempView.frame = targetRect;
     // 动画修改图片视图的frame , 居中同时放大
     [UIView animateWithDuration:SHPhotoBrowserShowImageAnimationDuration animations:^{
         tempView.frame = targetRect;
@@ -670,8 +681,15 @@
         self.indeSHabel.hidden = YES;
         return;
     }
-    NSString *title = [NSString stringWithFormat:@"%zd / %zd",self.currentImageIndex+1,self.imageCount];
-    self.indeSHabel.text = title;
+    if (_browserViewStyle==SHPhotoBrowserViewStyleBlack) {
+        NSString *title = [NSString stringWithFormat:@"%zd / %zd",self.currentImageIndex+1,self.imageCount];
+        self.indeSHabel.text = title;
+    }else if (_browserViewStyle==SHPhotoBrowserViewStyleWhite){
+        NSString *title = [NSString stringWithFormat:@"%zd/%zd",self.currentImageIndex+1,self.imageCount];
+        self.indeSHabel.text = title;
+    }
+
+  
 }
 
 #pragma mark    -   public method
@@ -697,6 +715,11 @@
 
 - (void)show
 {
+    if (_browserViewStyle==SHPhotoBrowserViewStyleBlack) {
+        self.backgroundColor=SHPhotoBrowserBackgrounColor;
+    }else if (_browserViewStyle==SHPhotoBrowserViewStyleWhite){
+        self.backgroundColor=[UIColor whiteColor];
+    }
     if (self.imageCount <= 0) {
         return;
     }
@@ -709,9 +732,9 @@
     UIWindow *window = [self findTheMainWindow];
     
     self.frame = window.bounds;
-    self.alpha = 0.0;
+    self.alpha = 1.0;
     [window addSubview:self];
-    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
     [self iniaialUI];
 }
 
@@ -720,7 +743,7 @@
  */
 - (void)dismiss
 {
-    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone];
     [UIView animateWithDuration:SHPhotoBrowserHideImageAnimationDuration animations:^{
         self.alpha = 0.0;
     } completion:^(BOOL finished) {
@@ -790,6 +813,21 @@
     browser.imageCount = images.count;
     browser.currentImageIndex = currentImageIndex;
     browser.images = images;
+    [browser show];
+    return browser;
+}
+
++ (instancetype)showPhotoBrowserWithImages:(NSArray *)images currentImageIndex:(NSInteger)currentImageIndex withStyle:(SHPhotoBrowserViewStyle)style
+{
+    if (images.count <=0 || images ==nil) {
+        SHPBLog(@"一行代码展示图片浏览的方法,传入的数据源为空,不进入图片浏览,请检查传入数据源");
+        return nil;
+    }
+    SHPhotoBrowser *browser = [[SHPhotoBrowser alloc] init];
+    browser.imageCount = images.count;
+    browser.currentImageIndex = currentImageIndex;
+    browser.images = images;
+    browser.browserViewStyle=style;
     [browser show];
     return browser;
 }

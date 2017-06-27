@@ -99,6 +99,10 @@
  */
 @property (nonatomic , assign) SHPhotoBrowserStyle browserStyle;
 /**
+ *  browserView style
+ */
+@property (nonatomic , assign) SHPhotoBrowserViewStyle browserViewStyle;
+/**
  *  占位图片,可选(默认是一张灰色的100*100像素图片) 
  *  当没有实现数据源中placeholderImageForIndex方法时,默认会使用这个占位图片
  */
@@ -164,6 +168,7 @@
  @return SHPhotoBrowser实例对象
  */
 + (instancetype)showPhotoBrowserWithImages:(NSArray *)images currentImageIndex:(NSInteger)currentImageIndex;
++ (instancetype)showPhotoBrowserWithImages:(NSArray *)images currentImageIndex:(NSInteger)currentImageIndex withStyle:(SHPhotoBrowserViewStyle)style;
 
 /**
  *  初始化底部ActionSheet弹框数据 , 不实现此方法,则没有类似微信那种长按手势弹框

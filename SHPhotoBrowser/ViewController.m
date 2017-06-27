@@ -37,7 +37,7 @@
 
 -(void)openPhotoViewController{
     NSArray * marrImages = [NSArray arrayWithObjects:@"https://cdn1.showjoy.com/images/be/be8852f9d3984865951a8206772ccbbd.jpg",@"https://cdn1.showjoy.com/images/6e/6e66ef820e36418c8b0b6863c8253a75.jpg",@"https://cdn1.showjoy.com/images/5b/5b63d7766cfa4cf1b9a2bc07c7c6a1c2.jpg",@"https://cdn1.showjoy.com/images/8f/8ff2116f1ad141bb96a78a0cb759301b.jpg",[UIImage imageNamed:@"photo1.jpg"], nil];
-    [SHPhotoBrowser showPhotoBrowserWithImages:marrImages currentImageIndex:2];
+    [SHPhotoBrowser showPhotoBrowserWithImages:marrImages currentImageIndex:2 withStyle:SHPhotoBrowserViewStyleWhite];
 }
 
 #pragma mark SHPhotoBrowserDelegate

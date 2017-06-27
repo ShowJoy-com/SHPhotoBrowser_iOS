@@ -73,7 +73,9 @@
     [singleTapBackgroundView requireGestureRecognizerToFail:doubleTapBackgroundView];
     [self addGestureRecognizer:singleTapBackgroundView];
     [self addGestureRecognizer:doubleTapBackgroundView];
+
 }
+
 
 - (void)layoutSubviews
 {
@@ -265,9 +267,10 @@
             self.photoImageView.image = result.image;
             self.progress = 1.0f;
             [weakSelf.photoImageView setNeedsDisplay];
-            [UIView animateWithDuration:0.25 animations:^{
-                [weakSelf setMaxAndMinZoomScales];
-            }];
+            [weakSelf setMaxAndMinZoomScales];
+//            [UIView animateWithDuration:0.25 animations:^{
+//                
+//            }];
         }
        
     }];
