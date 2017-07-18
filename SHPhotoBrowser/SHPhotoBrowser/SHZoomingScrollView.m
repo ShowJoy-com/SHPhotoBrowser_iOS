@@ -222,11 +222,8 @@
         self.progress = 1.0f;
         return;
     }
-    // 使用PINRemoteImage
-    PINCache *cache = [[PINRemoteImageManager sharedImageManager] pinCache];
-    UIImage *showImage = [UIImage imageWithData:[cache objectFromDiskForKey:[url absoluteString]]];
       // 使用SDWebImage
-    //UIImage *showImage = [[SDImageCache sharedImageCache] imageFromDiskCacheForKey:[url absoluteString]];
+    UIImage *showImage = [[SDImageCache sharedImageCache] imageFromDiskCacheForKey:[url absoluteString]];
     if (showImage) {
         self.photoImageView.image = showImage;
         [self setMaxAndMinZoomScales];
@@ -237,42 +234,26 @@
     [self setMaxAndMinZoomScales];
     __weak typeof(self) weakSelf = self;
     // 使用SDWebImage
-//    [weakSelf.photoImageView sd_setImageWithURL:url placeholderImage:placeholder options:SDWebImageRetryFailed | SDWebImageLowPriority| SDWebImageHandleCookies progress:^(NSInteger receivedSize, NSInteger expectedSize) {
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            if (expectedSize>0) {
-//                // 修改进度
-//                weakSelf.progress = (CGFloat)receivedSize / expectedSize ;
-//            }
-//            [self resetZoomScale];
-//        });
-//        
-//    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-//
-//        if (error) {
-//            [self setMaxAndMinZoomScales];
-//            SHFormatLog(@"加载图片失败 , 图片链接imageURL = %@ , 检查是否开启允许HTTP请求",imageURL);
-//        } else {
-//            weakSelf.photoImageView.image = image;
-//            [weakSelf.photoImageView setNeedsDisplay];
-//            [UIView animateWithDuration:0.25 animations:^{
-//                [weakSelf setMaxAndMinZoomScales];
-//            }];
-//        }
-//    }];
-     // 使用PINRemoteImage
-    [self.photoImageView pin_setImageFromURL:url completion:^(PINRemoteImageManagerResult * _Nonnull result) {
-        if (result.error) {
-             [self setMaxAndMinZoomScales];
-        }else{
-            self.photoImageView.image = result.image;
-            self.progress = 1.0f;
+    
+    [weakSelf.photoImageView sd_setImageWithURL:url placeholderImage:placeholder options:SDWebImageRetryFailed | SDWebImageLowPriority| SDWebImageHandleCookies progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (expectedSize>0) {
+                // 修改进度
+                weakSelf.progress = (CGFloat)receivedSize / expectedSize ;
+            }
+            [self resetZoomScale];
+        });
+    } completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+        if (error) {
+            [self setMaxAndMinZoomScales];
+            SHFormatLog(@"加载图片失败 , 图片链接imageURL = %@ , 检查是否开启允许HTTP请求",imageURL);
+        } else {
+            weakSelf.photoImageView.image = image;
             [weakSelf.photoImageView setNeedsDisplay];
-            [weakSelf setMaxAndMinZoomScales];
-//            [UIView animateWithDuration:0.25 animations:^{
-//                
-//            }];
+            [UIView animateWithDuration:0.25 animations:^{
+                [weakSelf setMaxAndMinZoomScales];
+            }];
         }
-       
     }];
 }
 

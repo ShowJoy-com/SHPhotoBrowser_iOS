@@ -7,279 +7,140 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		004611282CCD518AE94E3CAC4C64C39D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3A8804873978C2398C52CCFF2C9C18C /* UIKit.framework */; };
-		0185F9864009CB3B0E73041CB091DB46 /* PINImageView+PINRemoteImage.h in Headers */ = {isa = PBXBuildFile; fileRef = FDFCD3A04427515D1AF1B773A982AC75 /* PINImageView+PINRemoteImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09092231CAB527C5D61A01256A4130C8 /* PINOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 74B492FC3FDF30CF6559370F48C28826 /* PINOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0B4010D9C88D95FE0210E336D7F6F329 /* PINRemoteImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 960806510F29D04899F7FD67D275EC1B /* PINRemoteImage-dummy.m */; };
-		0D53700346300AA5464C454C2C169BEE /* PINCache+PINRemoteImageCaching.h in Headers */ = {isa = PBXBuildFile; fileRef = F6C7127C66635C61EE3BB877B3B1E738 /* PINCache+PINRemoteImageCaching.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14DBF83429F6B686E89284AFAE73DC07 /* PINRemoteLock.h in Headers */ = {isa = PBXBuildFile; fileRef = E720352AE0AC7ABD6CABB66405CD9D6D /* PINRemoteLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1740EDA097D09BF033F4EC2E0570ED45 /* PINImage+WebP.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F0B48F665A02787D4E4453C7257D2A3 /* PINImage+WebP.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A0B5B0679DE97330A853ABA8B70820F /* PINRemoteImageCaching.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA16C82CE72341423DE989ABD159241 /* PINRemoteImageCaching.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1CDD04F1A554D00FFE379ABF1ECCF19C /* PINAnimatedImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D09FCFA6E12DB713D42E2829EB6AF2F /* PINAnimatedImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1FA1F9539CB7507BA97B8FEE6005FD8E /* PINCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B102DCB5A4D2E8D6411EA8BD41B9C5 /* PINCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		2103A586A494E5DC9F6C02878107BF43 /* PINRemoteImageCallbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = F116AC4B506EE60E1411A6E8C7ADEA77 /* PINRemoteImageCallbacks.m */; };
-		29049B06E42478C094F1859330E2F3D1 /* PINImage+ScaledImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E5760FE3973B41D15F886FFF5F18F9C /* PINImage+ScaledImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2A331688FF273B7CE9F0003766B55037 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179B0182DA75663EABCCCF1ED789C4B7 /* Foundation.framework */; };
-		2C8EA1CFBC3107FFDC584857DBD4B145 /* PINImage+ScaledImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE139E7BB0C0450FD32AE3E752B75F9 /* PINImage+ScaledImage.m */; };
-		2CD23321BD5CDE5D62F62C35791E44D4 /* PINCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D22438826151F7907C3229717C4A233 /* PINCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D692523B4E10BF5E211A437B293A699 /* PINImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = A9732069118D6D74B3680EEE15256119 /* PINImage+WebP.m */; };
-		2D85456AF01407746D68743BD4181D09 /* PINRemoteImageManagerResult.h in Headers */ = {isa = PBXBuildFile; fileRef = D9D1286F7395336E50FF3CA77F67D96A /* PINRemoteImageManagerResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FBB817B4DB65572DF29EA86044EE475 /* NSURLSessionTask+Timing.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A91B34304AECF40A87343100280369 /* NSURLSessionTask+Timing.m */; };
-		3202C2C2441B6450808D03EF8EA44D39 /* NSData+ImageDetectors.h in Headers */ = {isa = PBXBuildFile; fileRef = 36EE4B6B8200E6838D15515600B47CE5 /* NSData+ImageDetectors.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BABAE29C7BE1DBE7EB902E1813ED8E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179B0182DA75663EABCCCF1ED789C4B7 /* Foundation.framework */; };
-		3CFDBE559235CFCB47A89A16FE8504E6 /* Pods-SHPhotoBrowser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53088C1A99901A0E99AAF66AA3751F3A /* Pods-SHPhotoBrowser-dummy.m */; };
-		4404401B7830D34B4F70A66A5BBB1A33 /* PINRemoteImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AEBEFAB05FF891D3FA40B55073CA440 /* PINRemoteImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4620F1419EA35435FEBCD12CA5CCEE0A /* PINOperation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 145E6550A01AB7AD8D2941D66C7AED5B /* PINOperation-dummy.m */; };
-		465F92BFCBE5A895094F722F3B66E23B /* PINRemoteImageBasicCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 92D00B7B5B316666E6CE87D76B399761 /* PINRemoteImageBasicCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		47D2309F05BE9C925E1866CBFB7563B0 /* PINRemoteImageCallbacks.h in Headers */ = {isa = PBXBuildFile; fileRef = ADE64DA4E20D06D337EE23349529F4DD /* PINRemoteImageCallbacks.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		488675AB7536FA4ECD856BB0FD918AB5 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A529CE70122769E174B4434BDE7B69E7 /* ImageIO.framework */; };
-		4887667EA646236217140561954A1AAD /* PINOperationQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 9387C4A4EC67B747E244D18444F5EA3F /* PINOperationQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4921489B45228BC6DB6E872DB0BCCB0D /* PINOperationGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A9E92C3AE25EF4226D80E22C8D2F66 /* PINOperationGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4BE6A3AD040193F591E62D37D97474A4 /* PINButton+PINRemoteImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C47FEFDB5F86D06BCECE2BEBFBF3BEF1 /* PINButton+PINRemoteImage.m */; };
-		4F05A84E51F6D8084FF8018ACB85FC0C /* PINRemoteImageDownloadQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 250BE6C6F7EBEE48ACD204F468BBED39 /* PINRemoteImageDownloadQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4FAA934DF546776E5CB64F5C4E756D1B /* PINOperationGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3C701C39E7D47257B32047195E9A27 /* PINOperationGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		55A664819C40D1DA2A794732B70F546D /* PINCacheObjectSubscripting.h in Headers */ = {isa = PBXBuildFile; fileRef = A15F72BE678AFCEE92913A39AF399272 /* PINCacheObjectSubscripting.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56F5FE8761D96F3C89D999EB8BA550B0 /* PINCaching.h in Headers */ = {isa = PBXBuildFile; fileRef = DD849179246BB7C81E7DCFDE3A128330 /* PINCaching.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A3BCB8B58C1059AD872CC07C5AABBD3 /* PINAlternateRepresentationProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 93B47B6C61DA0BD18D1238915F26E1BD /* PINAlternateRepresentationProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5E6B33F9095D118F40C989E05532849B /* PINRemoteImageDownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = C551B76F354C7226CAD3D90A6A6B5879 /* PINRemoteImageDownloadTask.m */; };
-		5FED350467DC18A0CAF11D784232AE32 /* PINResume.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AB8F62D6ED4F33091A49584D9EA9605 /* PINResume.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		655A5F16ED73D92D114C38F691B5AC79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179B0182DA75663EABCCCF1ED789C4B7 /* Foundation.framework */; };
-		678EB4EE875C089E53675C1C4DDA7995 /* PINResume.m in Sources */ = {isa = PBXBuildFile; fileRef = FB48F2DA908EF89A271A76916E4145C9 /* PINResume.m */; };
-		67E2A2D9ED980D2AE429BF3600B7A5CA /* PINRemoteImageMemoryContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = C5EBC0E71A888D6FCD0752A86E15B19C /* PINRemoteImageMemoryContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		698EC6F1E6EEC4697DED81179D5DDC86 /* PINMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A00F4CF7F1741411D8DF30E717EF2CA7 /* PINMemoryCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		711A07BD614D297A446AF519F9D6EB06 /* PINRemoteImageDownloadTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 30F4E5301139FF6C938AFD51C85E5FD3 /* PINRemoteImageDownloadTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		720A48EDA56BDF4904897906D0FAAE16 /* PINAnimatedImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BED41F06464A2B0BBDDE2FEC075C1B /* PINAnimatedImageManager.m */; };
-		7289CCCD521029F16DDBAD635A1C0189 /* NSData+ImageDetectors.m in Sources */ = {isa = PBXBuildFile; fileRef = 668ED5EBC738247FCA49BFE550F382E2 /* NSData+ImageDetectors.m */; };
-		7389C308FAB5351991DE03F5A70F8FD4 /* PINRemoteImageMemoryContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B8EBAAA20A622D19E286331225BAA5 /* PINRemoteImageMemoryContainer.m */; };
-		745159C4766ABA33E98D06B8B47C25EE /* PINRemoteImageManager+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FCBE6E445199B2A4025EDCB6B9BC0D18 /* PINRemoteImageManager+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		76034726578F65C240B6611766699B61 /* PINRemoteLock.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A33AA43B7807618DCDC15DF69C88B2 /* PINRemoteLock.m */; };
-		76D240A905BB73A7F6B9E5B963D7CDAA /* PINRemoteImageTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F787397BF21488765C1B5B43B7CCC36B /* PINRemoteImageTask.m */; };
-		82A33D210B92F3BBBBEBDF0986C08060 /* PINRemoteImageCategoryManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D877896161ED3C4373290DA1B33F611 /* PINRemoteImageCategoryManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82D89C80EFD1E1D1F68D6F1E5F646450 /* PINRemoteImageCategoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE83AABC8AC4FBD6F19940BB64D1F0A /* PINRemoteImageCategoryManager.m */; };
-		8322B0609870102A5FCCD650EFE45B69 /* PINOperationMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 292811E7370B6B67B682E1807E049B7E /* PINOperationMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		852C37EF79097348DC1102B9F8F5A266 /* PINOperationTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 97A4C4F8DCD076F7D3BA5DFDED975AAC /* PINOperationTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		859356F15C1BA693CAE88CCBFF9B28A7 /* PINMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = B2EB374D2D6BAB6691D9BF98A247A0BD /* PINMemoryCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		892C7E78B1934A34A9FD2C2D722E4596 /* PINImageView+PINRemoteImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB2E87E1852FAF0092630E3654F6B3C /* PINImageView+PINRemoteImage.m */; };
-		8B20C3E30E4A4FBD30A1C0FDCB23D110 /* PINAnimatedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F0DBAE1D0F4DCDD74E0C9885C931297 /* PINAnimatedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BEC3C8F670898FD11D079A3FF8D278D /* PINRemoteImageProcessorTask.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F3BC4B3191242E95A3796075300312 /* PINRemoteImageProcessorTask.m */; };
-		8D1F6BA998E3B58481D2128C6A3CE4D8 /* PINRemoteImageMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E5D1FF40317D6508613D1943E3A41B6F /* PINRemoteImageMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		92B52116C3CF993138ED464FB0C7E32B /* PINCacheMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E47970D5E7D2EC09FBD3254DC840427 /* PINCacheMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		97FAD1EAABCCDEB55A3257D0513B11D4 /* PINProgressiveImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AAEE7153972C387FCB1BBA0F9F0A1F31 /* PINProgressiveImage.m */; };
-		9CC31D3EEA4D17E8D78FC29D8A6EF502 /* NSURLSessionTask+Timing.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EAE9528FDF029C89970ECB2C99BE144 /* NSURLSessionTask+Timing.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9CD7430FDF0607742BAFF071C2E0E84B /* PINImage+DecodedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A54B764AE6DD105EA45BA20BB5BDBD4 /* PINImage+DecodedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A714B7BF04B7404AD44DADDBEDCE478D /* PINProgressiveImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 78CD0C927EEAAAD56A7B607D6E64290A /* PINProgressiveImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ADED6A21B6954ADB4A3B3A17419222C9 /* PINRemoteImageTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D90A2DCED97164DECA58543149E8770 /* PINRemoteImageTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B18867069D2C3AC56AC191B49D711DE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179B0182DA75663EABCCCF1ED789C4B7 /* Foundation.framework */; };
-		B2F593F013F8F1C4D7B816ED1129EECA /* PINButton+PINRemoteImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 097FC3AC076F0ACCEE2E7B0C3DA0F804 /* PINButton+PINRemoteImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5D63FD15430541CC1DEF65E32F5947E /* PINCache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FED5CD3B4FC5C449A3C6D7D1F8DCA95D /* PINCache-dummy.m */; };
-		B7F99EB68A3D6912E20B6996580B388D /* PINRemoteImageManagerResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F62BB3BC3142EE56925B1023FC8D026C /* PINRemoteImageManagerResult.m */; };
-		BA7DFC9D008C77913BAD8E6D9B028F45 /* PINDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = F856D05EA004AF0742BDB8F7327A7E03 /* PINDiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C1A75A80A418CA2C919A9B51FCB29C17 /* PINRemoteImageBasicCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 136CA44BCD246916132019B13E73D618 /* PINRemoteImageBasicCache.m */; };
-		C5431FD893EBB58A3B04E980B49B42C0 /* PINRemoteImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE9D0C977ADBFEF25F76ED641C3D6B1 /* PINRemoteImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C5547B78AB79FFD8E60593A1DF06B9FC /* PINRemoteImageDownloadQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 987D8C4347BFDA9A0CA6DC5BF16C9FB4 /* PINRemoteImageDownloadQueue.m */; };
-		C64883D1068ACB319E6863141AE298B9 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567B96ED0940B4D108511568B56E413C /* Accelerate.framework */; };
-		CF499C8B0861FDF8D1210F5AE5E71EB2 /* PINRemoteImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 277044497F5BA116B7512D4F6081CEC6 /* PINRemoteImageManager.m */; };
-		D0B61DB855987DC7126A83F3EC0C6D04 /* PINCache+PINRemoteImageCaching.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1991E17781825A4B938D1648B53B01 /* PINCache+PINRemoteImageCaching.m */; };
-		D4E3033DB8987868C822E810635C75E1 /* PINAlternateRepresentationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EC4A7030E19553CB023851AB6C69C0 /* PINAlternateRepresentationProvider.m */; };
-		E009BF97A4F345289074DC77A7E27B8B /* PINURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 53AB43DB8F38E4DC0C43E0803183D9C3 /* PINURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E01C701B635E775F3A692286D0FA416D /* PINRemoteImageTask+Subclassing.h in Headers */ = {isa = PBXBuildFile; fileRef = 2458522F8153A5D78329648BDED6F8D4 /* PINRemoteImageTask+Subclassing.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E5E8CEA2DDD683F28D3FD32885BB7155 /* PINURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C26749747205C7A22E5C1808E441727 /* PINURLSessionManager.m */; };
-		E86879792439995BD901B85FB9DB451B /* PINRemoteImageProcessorTask.h in Headers */ = {isa = PBXBuildFile; fileRef = D1B8CE6317980150B9B4FF0C4D6DAC33 /* PINRemoteImageProcessorTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE683D9D6D370707B629FC2E6CD1826E /* PINImage+DecodedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 852FBBF92379D044D5B32AE4329A3B30 /* PINImage+DecodedImage.m */; };
-		F03CD7FD029294BF850EF805EEBE5E27 /* PINAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F166DFD28F6F9A15B9DD76EB197892A1 /* PINAnimatedImage.m */; };
-		F3794A9EFFF46137878FD70E13633DB5 /* PINDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6424BFDBC085913F3E286D3FF75A3CAE /* PINDiskCache.m */; settings = {COMPILER_FLAGS = "-fobjc-arc-exceptions -DOS_OBJECT_USE_OBJC=0 -DOS_OBJECT_USE_OBJC=0"; }; };
-		F5C2BABD0603E6444E40B892C7474931 /* PINOperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D50EC3F8BAB38901B280E8BB690CAAD4 /* PINOperationQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		089E35A88E5C6D9F8AAD389F4429BF52 /* NSData+ImageContentType.h in Headers */ = {isa = PBXBuildFile; fileRef = 151184230168224C23550D1C654C722F /* NSData+ImageContentType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08E646FF345C45C125A14FA7F6B31BED /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7175586325AADB8BA8C4ECB09907EA10 /* SDWebImageDownloaderOperation.m */; };
+		09AC742A10A75D9CE52059BBB12CC233 /* SDWebImageDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = B1FC992CB7BD5112195C879B7F23ACC8 /* SDWebImageDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		113BB5F6A3BFDCC09448B2BE84D44342 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D5D1B92B920495205ECC5F01A79B18 /* SDWebImagePrefetcher.m */; };
+		13989AC1761F2D93B1E3F0FA8EF79C64 /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1278B5233127A1E722D53F10E7FA5EC8 /* SDWebImageOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B6DF508A8078EA0BDB96643E56B6141 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E5B273CF39F8FC2FD8786F72729B7 /* SDWebImageDecoder.m */; };
+		2082316C4F44EBC56594FA97E99D65BC /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1B1D53218A33DDF03E78CC1D10282D /* SDWebImageCompat.m */; };
+		299AEFA99929B18F043AEEF32C5FC8B8 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 003ABD753CAF59EF000CA534C832D14D /* UIImage+GIF.m */; };
+		2A9144E2EEC7000E671CFCDB9EA97738 /* UIButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = F84F89DA463D5F013F47620258BECA2C /* UIButton+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B5DBCF853ACE8E4AB80BBCC679B8836 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 33187D162677C128060029C7359C0024 /* SDImageCache.m */; };
+		2F7102EC271458C611CF037758CBDA85 /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = D0AAD31650A9E6056BF51E6E7F5DC451 /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34DA5E3D0DDBE3345E01CDE0557727FD /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D7436D47BF86BE7F4C22F258A0154 /* SDWebImageManager.m */; };
+		40A65B6E0B7B2349F70CA35DB9D6064D /* SDImageCacheConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 169F96E9B9B5F19875E606404AF824BE /* SDImageCacheConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B63BF582148BC36E88938E4199EC1BC /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 635A4BD1CEF7E623C71F97A54BFC3616 /* ImageIO.framework */; };
+		4F21E8972F3B6CC32BFD003367BA64EE /* NSImage+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 38144E417F1BCD6B1FAEC6B8717E1E23 /* NSImage+WebCache.m */; };
+		51199907930A283447613B5A47F057C6 /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E2890C6456A666BDAAC0FA873AC628D /* SDImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51F20891FD7AC533835FDAEB64144107 /* SDImageCacheConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 017851524E3ABDA65B7BF9B37C3D7034 /* SDImageCacheConfig.m */; };
+		52A9CC28A77D1FFCB8E2AEB0931BC3E4 /* NSImage+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = CC6C5BEF90DB5C23F890DDF3AE04E82D /* NSImage+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60B2F1D581159DA4BD70DAE8C2008A6B /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = F3B0E9B6DF8E857C9B0D2F99FC304F5C /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61D625DA8B4A0093C2C73EE01491FE43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE29CF4FF5C02028C0A06EC0D2A6120 /* Foundation.framework */; };
+		6CC1F50AAE86027586205DBF16DDF4E0 /* UIView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = FC24B0F8787681FFD86A7FF97C481764 /* UIView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78773A84C6BB8E771EEAE292A6435AE0 /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FAAAA9369B44B0CACDD1C0E8FCD6F43 /* SDWebImageDownloaderOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79D382FFEB9DA4ECA6884A4B39BE8CBA /* Pods-SHPhotoBrowser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53088C1A99901A0E99AAF66AA3751F3A /* Pods-SHPhotoBrowser-dummy.m */; };
+		7D4354F05E0871B777EE10B8D327EAD3 /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AC4FF8277985072AA2414C8092B0E5E8 /* SDWebImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		830EB8E664D281F1E1CD4E2259727B8C /* SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C421E1831E29906D3404BDCA1B2C1B /* SDWebImage-dummy.m */; };
+		84C31727F88CE33F248C353B585FD6CC /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A96738A124145BD661891641E09D321 /* UIView+WebCacheOperation.m */; };
+		88848846E9A8EF6AD70321CE7BC5F384 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0515B8FFDF02AC747460BF06B7147C92 /* NSData+ImageContentType.m */; };
+		AEB453AF80AEBCD9192AD845FE5D451A /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F24A6DBFFEDC06E98C0AFD080F1D24D /* UIImageView+HighlightedWebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA0777E42EC634FC873BE4B4969F77AD /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A82F610DA462435F1AF2E40069B468A /* UIView+WebCacheOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA78AA42293D56B16ACB6E1C6744FEF4 /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ACCB8B450CC4B80A63EE725C41C0B29 /* UIImage+GIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCC4F556DE27E7470551129CF6CF9803 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F922701ABE8790DD84BD643BFA3F9D9E /* UIImageView+WebCache.m */; };
+		C7F81B8B68C7E4660539B22EE6790B5F /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB52CF8D4721A70A8DBB80842994D97 /* UIImageView+HighlightedWebCache.m */; };
+		C9F978022373234113852DC4D762E6CC /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FF5AFAC79DED4F0C94D1BB961D2D557 /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9FC7DC7A54CF93D06E6398770D40406 /* SDWebImageCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 800D2AB9BD2022E1D6C504CF6566681F /* SDWebImageCompat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC63C1A2815F30C5DF0702850AD98952 /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2BB2A6F6DDDD53BC079622F286FF42 /* UIView+WebCache.m */; };
+		CDE2353A5CBFD1789448CDBB822760D8 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE46DB6FE0E8D812F73130BD83794EB /* UIImage+MultiFormat.m */; };
+		F27F4E54AD0E20A7BA87CFB414AD949D /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 061BD245946E3501DC9722976B6AD69F /* SDWebImageDownloader.m */; };
+		F33C650D0061BBD747696B3BC1DD5DDF /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B730BABFE2264BB576806D96D5292B1 /* UIImage+MultiFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA1713DA5C1B3C26AEC39BCC3669D9EE /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 123A809310FA5938787013915F3D64B4 /* UIButton+WebCache.m */; };
+		FAADBA0E10BBFB9D62B433C2E969AF06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE29CF4FF5C02028C0A06EC0D2A6120 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1D300E2BF464EC3E5EB56B049A74D9FD /* PBXContainerItemProxy */ = {
+		83C8032D5E05F9695C8D7A277AAC7287 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DE689CAE8DD656C32DF75630C09FA386;
-			remoteInfo = PINCache;
-		};
-		3C0C570A54DF38D0D81221E283A12677 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7020FA468B15664DBD673D04AD8E5C33;
-			remoteInfo = PINOperation;
-		};
-		64168CCC034DAEF1AAE0024AA49EE291 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7020FA468B15664DBD673D04AD8E5C33;
-			remoteInfo = PINOperation;
-		};
-		79EDE60B6A5A7E20285282ED9FA2915F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7020FA468B15664DBD673D04AD8E5C33;
-			remoteInfo = PINOperation;
-		};
-		CAB50400E936159A4A944688258742F9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7A9492F0C84610C72141FFB341D7820D;
-			remoteInfo = PINRemoteImage;
-		};
-		DF5FF1A886565AC7462C4BAAE2427289 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DE689CAE8DD656C32DF75630C09FA386;
-			remoteInfo = PINCache;
+			remoteGlobalIDString = 7448A35B3B33E32C72B0E7943E7C4D53;
+			remoteInfo = SDWebImage;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		048DA46A47C359DBDFD2A40C87FE303F /* libPods-SHPhotoBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SHPhotoBrowser.a"; path = "libPods-SHPhotoBrowser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		097FC3AC076F0ACCEE2E7B0C3DA0F804 /* PINButton+PINRemoteImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PINButton+PINRemoteImage.h"; path = "Source/Classes/Image Categories/PINButton+PINRemoteImage.h"; sourceTree = "<group>"; };
-		0C26749747205C7A22E5C1808E441727 /* PINURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINURLSessionManager.m; path = Source/Classes/PINURLSessionManager.m; sourceTree = "<group>"; };
-		0E5760FE3973B41D15F886FFF5F18F9C /* PINImage+ScaledImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PINImage+ScaledImage.h"; path = "Source/Classes/Categories/PINImage+ScaledImage.h"; sourceTree = "<group>"; };
-		125D64FA1471B80C0596C3828E59D4B9 /* libPINCache.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPINCache.a; path = libPINCache.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		12A9E92C3AE25EF4226D80E22C8D2F66 /* PINOperationGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINOperationGroup.h; path = Source/PINOperationGroup.h; sourceTree = "<group>"; };
-		136CA44BCD246916132019B13E73D618 /* PINRemoteImageBasicCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINRemoteImageBasicCache.m; path = Source/Classes/PINRemoteImageBasicCache.m; sourceTree = "<group>"; };
+		003ABD753CAF59EF000CA534C832D14D /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/UIImage+GIF.m"; sourceTree = "<group>"; };
+		017851524E3ABDA65B7BF9B37C3D7034 /* SDImageCacheConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCacheConfig.m; path = SDWebImage/SDImageCacheConfig.m; sourceTree = "<group>"; };
+		0515B8FFDF02AC747460BF06B7147C92 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		061BD245946E3501DC9722976B6AD69F /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
+		0ACCB8B450CC4B80A63EE725C41C0B29 /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/UIImage+GIF.h"; sourceTree = "<group>"; };
+		0E2890C6456A666BDAAC0FA873AC628D /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
+		123A809310FA5938787013915F3D64B4 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
+		1278B5233127A1E722D53F10E7FA5EC8 /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
 		138D654AFB5A9CABFBD5056A24BE9735 /* Pods-SHPhotoBrowser-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SHPhotoBrowser-resources.sh"; sourceTree = "<group>"; };
-		145E6550A01AB7AD8D2941D66C7AED5B /* PINOperation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PINOperation-dummy.m"; sourceTree = "<group>"; };
-		16BED41F06464A2B0BBDDE2FEC075C1B /* PINAnimatedImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINAnimatedImageManager.m; path = Source/Classes/PINAnimatedImageManager.m; sourceTree = "<group>"; };
-		179B0182DA75663EABCCCF1ED789C4B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		1AB8F62D6ED4F33091A49584D9EA9605 /* PINResume.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINResume.h; path = Source/Classes/PINResume.h; sourceTree = "<group>"; };
-		1B33A90A2DF20CAADA5E71E112F33F8C /* PINOperation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PINOperation-prefix.pch"; sourceTree = "<group>"; };
-		1DA16C82CE72341423DE989ABD159241 /* PINRemoteImageCaching.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImageCaching.h; path = Source/Classes/PINRemoteImageCaching.h; sourceTree = "<group>"; };
-		2458522F8153A5D78329648BDED6F8D4 /* PINRemoteImageTask+Subclassing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PINRemoteImageTask+Subclassing.h"; path = "Source/Classes/Categories/PINRemoteImageTask+Subclassing.h"; sourceTree = "<group>"; };
-		250BE6C6F7EBEE48ACD204F468BBED39 /* PINRemoteImageDownloadQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImageDownloadQueue.h; path = Source/Classes/PINRemoteImageDownloadQueue.h; sourceTree = "<group>"; };
-		26BD43E800515581D99D457DB39D3E52 /* libPINOperation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPINOperation.a; path = libPINOperation.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		277044497F5BA116B7512D4F6081CEC6 /* PINRemoteImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINRemoteImageManager.m; path = Source/Classes/PINRemoteImageManager.m; sourceTree = "<group>"; };
-		28A91B34304AECF40A87343100280369 /* NSURLSessionTask+Timing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLSessionTask+Timing.m"; path = "Source/Classes/Categories/NSURLSessionTask+Timing.m"; sourceTree = "<group>"; };
-		292811E7370B6B67B682E1807E049B7E /* PINOperationMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINOperationMacros.h; path = Source/PINOperationMacros.h; sourceTree = "<group>"; };
-		2DE139E7BB0C0450FD32AE3E752B75F9 /* PINImage+ScaledImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PINImage+ScaledImage.m"; path = "Source/Classes/Categories/PINImage+ScaledImage.m"; sourceTree = "<group>"; };
-		30F4E5301139FF6C938AFD51C85E5FD3 /* PINRemoteImageDownloadTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImageDownloadTask.h; path = Source/Classes/PINRemoteImageDownloadTask.h; sourceTree = "<group>"; };
-		36B102DCB5A4D2E8D6411EA8BD41B9C5 /* PINCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINCache.m; path = Source/PINCache.m; sourceTree = "<group>"; };
-		36EE4B6B8200E6838D15515600B47CE5 /* NSData+ImageDetectors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageDetectors.h"; path = "Source/Classes/Categories/NSData+ImageDetectors.h"; sourceTree = "<group>"; };
-		3B3C701C39E7D47257B32047195E9A27 /* PINOperationGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINOperationGroup.m; path = Source/PINOperationGroup.m; sourceTree = "<group>"; };
-		3B8BA63A561350B4307C013942EAC3AF /* libPINRemoteImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPINRemoteImage.a; path = libPINRemoteImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		151184230168224C23550D1C654C722F /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		169F96E9B9B5F19875E606404AF824BE /* SDImageCacheConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCacheConfig.h; path = SDWebImage/SDImageCacheConfig.h; sourceTree = "<group>"; };
+		1F2BB2A6F6DDDD53BC079622F286FF42 /* UIView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCache.m"; path = "SDWebImage/UIView+WebCache.m"; sourceTree = "<group>"; };
+		33187D162677C128060029C7359C0024 /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
+		38144E417F1BCD6B1FAEC6B8717E1E23 /* NSImage+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSImage+WebCache.m"; path = "SDWebImage/NSImage+WebCache.m"; sourceTree = "<group>"; };
 		4A183FEF604358AEFD20D85285BC96F1 /* Pods-SHPhotoBrowser-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SHPhotoBrowser-acknowledgements.plist"; sourceTree = "<group>"; };
-		4AEBEFAB05FF891D3FA40B55073CA440 /* PINRemoteImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImage.h; path = Source/Classes/PINRemoteImage.h; sourceTree = "<group>"; };
-		4DA76933F0E9DC89275EB8D1C08B226C /* PINCache-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PINCache-prefix.pch"; sourceTree = "<group>"; };
-		4DB2E87E1852FAF0092630E3654F6B3C /* PINImageView+PINRemoteImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PINImageView+PINRemoteImage.m"; path = "Source/Classes/Image Categories/PINImageView+PINRemoteImage.m"; sourceTree = "<group>"; };
-		4E47970D5E7D2EC09FBD3254DC840427 /* PINCacheMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINCacheMacros.h; path = Source/PINCacheMacros.h; sourceTree = "<group>"; };
+		4AFD7DB34106935146C000147E9AA770 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSDWebImage.a; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BE46DB6FE0E8D812F73130BD83794EB /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
 		53088C1A99901A0E99AAF66AA3751F3A /* Pods-SHPhotoBrowser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SHPhotoBrowser-dummy.m"; sourceTree = "<group>"; };
-		53AB43DB8F38E4DC0C43E0803183D9C3 /* PINURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINURLSessionManager.h; path = Source/Classes/PINURLSessionManager.h; sourceTree = "<group>"; };
-		567B96ED0940B4D108511568B56E413C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		5437AD385EDE551AEDFF150954990560 /* SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.xcconfig; sourceTree = "<group>"; };
+		5498F4E300BC16139F8A6203B7E099F1 /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
 		5843AD6E43D757C92E6E41CE13E9C899 /* Pods-SHPhotoBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SHPhotoBrowser.debug.xcconfig"; sourceTree = "<group>"; };
-		5F0B48F665A02787D4E4453C7257D2A3 /* PINImage+WebP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PINImage+WebP.h"; path = "Source/Classes/Categories/PINImage+WebP.h"; sourceTree = "<group>"; };
-		6424BFDBC085913F3E286D3FF75A3CAE /* PINDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINDiskCache.m; path = Source/PINDiskCache.m; sourceTree = "<group>"; };
-		668ED5EBC738247FCA49BFE550F382E2 /* NSData+ImageDetectors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageDetectors.m"; path = "Source/Classes/Categories/NSData+ImageDetectors.m"; sourceTree = "<group>"; };
-		6D09FCFA6E12DB713D42E2829EB6AF2F /* PINAnimatedImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINAnimatedImageManager.h; path = Source/Classes/PINAnimatedImageManager.h; sourceTree = "<group>"; };
-		7211E2672E530D29E60B45F8DDF9F16B /* PINOperation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PINOperation.xcconfig; sourceTree = "<group>"; };
-		74B492FC3FDF30CF6559370F48C28826 /* PINOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINOperation.h; path = Source/PINOperation.h; sourceTree = "<group>"; };
-		78CD0C927EEAAAD56A7B607D6E64290A /* PINProgressiveImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINProgressiveImage.h; path = Source/Classes/PINProgressiveImage.h; sourceTree = "<group>"; };
-		7D877896161ED3C4373290DA1B33F611 /* PINRemoteImageCategoryManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImageCategoryManager.h; path = Source/Classes/PINRemoteImageCategoryManager.h; sourceTree = "<group>"; };
-		7D90A2DCED97164DECA58543149E8770 /* PINRemoteImageTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImageTask.h; path = Source/Classes/PINRemoteImageTask.h; sourceTree = "<group>"; };
-		7EAE9528FDF029C89970ECB2C99BE144 /* NSURLSessionTask+Timing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLSessionTask+Timing.h"; path = "Source/Classes/Categories/NSURLSessionTask+Timing.h"; sourceTree = "<group>"; };
-		82B8EBAAA20A622D19E286331225BAA5 /* PINRemoteImageMemoryContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINRemoteImageMemoryContainer.m; path = Source/Classes/PINRemoteImageMemoryContainer.m; sourceTree = "<group>"; };
-		852FBBF92379D044D5B32AE4329A3B30 /* PINImage+DecodedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PINImage+DecodedImage.m"; path = "Source/Classes/Categories/PINImage+DecodedImage.m"; sourceTree = "<group>"; };
-		92D00B7B5B316666E6CE87D76B399761 /* PINRemoteImageBasicCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImageBasicCache.h; path = Source/Classes/PINRemoteImageBasicCache.h; sourceTree = "<group>"; };
-		9387C4A4EC67B747E244D18444F5EA3F /* PINOperationQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINOperationQueue.h; path = Source/PINOperationQueue.h; sourceTree = "<group>"; };
+		635A4BD1CEF7E623C71F97A54BFC3616 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		63C421E1831E29906D3404BDCA1B2C1B /* SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage-dummy.m"; sourceTree = "<group>"; };
+		6B2D7436D47BF86BE7F4C22F258A0154 /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/SDWebImageManager.m; sourceTree = "<group>"; };
+		6CE29CF4FF5C02028C0A06EC0D2A6120 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7175586325AADB8BA8C4ECB09907EA10 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		800D2AB9BD2022E1D6C504CF6566681F /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
+		8A6E5B273CF39F8FC2FD8786F72729B7 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDecoder.m; path = SDWebImage/SDWebImageDecoder.m; sourceTree = "<group>"; };
+		8B730BABFE2264BB576806D96D5292B1 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		8FF5AFAC79DED4F0C94D1BB961D2D557 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93B47B6C61DA0BD18D1238915F26E1BD /* PINAlternateRepresentationProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINAlternateRepresentationProvider.h; path = Source/Classes/PINAlternateRepresentationProvider.h; sourceTree = "<group>"; };
 		959C2CB273105A75BCB943EDDF5E5030 /* Pods-SHPhotoBrowser-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SHPhotoBrowser-frameworks.sh"; sourceTree = "<group>"; };
-		960806510F29D04899F7FD67D275EC1B /* PINRemoteImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PINRemoteImage-dummy.m"; sourceTree = "<group>"; };
-		97A4C4F8DCD076F7D3BA5DFDED975AAC /* PINOperationTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINOperationTypes.h; path = Source/PINOperationTypes.h; sourceTree = "<group>"; };
-		98212650F4362B0AAE14A92B8E837284 /* PINRemoteImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PINRemoteImage-prefix.pch"; sourceTree = "<group>"; };
-		987D8C4347BFDA9A0CA6DC5BF16C9FB4 /* PINRemoteImageDownloadQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINRemoteImageDownloadQueue.m; path = Source/Classes/PINRemoteImageDownloadQueue.m; sourceTree = "<group>"; };
-		9A54B764AE6DD105EA45BA20BB5BDBD4 /* PINImage+DecodedImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PINImage+DecodedImage.h"; path = "Source/Classes/Categories/PINImage+DecodedImage.h"; sourceTree = "<group>"; };
-		9D22438826151F7907C3229717C4A233 /* PINCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINCache.h; path = Source/PINCache.h; sourceTree = "<group>"; };
-		9F0DBAE1D0F4DCDD74E0C9885C931297 /* PINAnimatedImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINAnimatedImage.h; path = Source/Classes/PINAnimatedImage.h; sourceTree = "<group>"; };
-		A00F4CF7F1741411D8DF30E717EF2CA7 /* PINMemoryCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINMemoryCache.m; path = Source/PINMemoryCache.m; sourceTree = "<group>"; };
-		A15F72BE678AFCEE92913A39AF399272 /* PINCacheObjectSubscripting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINCacheObjectSubscripting.h; path = Source/PINCacheObjectSubscripting.h; sourceTree = "<group>"; };
-		A529CE70122769E174B4434BDE7B69E7 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
-		A9732069118D6D74B3680EEE15256119 /* PINImage+WebP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PINImage+WebP.m"; path = "Source/Classes/Categories/PINImage+WebP.m"; sourceTree = "<group>"; };
-		AAE9D0C977ADBFEF25F76ED641C3D6B1 /* PINRemoteImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImageManager.h; path = Source/Classes/PINRemoteImageManager.h; sourceTree = "<group>"; };
-		AAEE7153972C387FCB1BBA0F9F0A1F31 /* PINProgressiveImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINProgressiveImage.m; path = Source/Classes/PINProgressiveImage.m; sourceTree = "<group>"; };
-		ADE64DA4E20D06D337EE23349529F4DD /* PINRemoteImageCallbacks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImageCallbacks.h; path = Source/Classes/PINRemoteImageCallbacks.h; sourceTree = "<group>"; };
-		B2EB374D2D6BAB6691D9BF98A247A0BD /* PINMemoryCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINMemoryCache.h; path = Source/PINMemoryCache.h; sourceTree = "<group>"; };
-		B8F3BC4B3191242E95A3796075300312 /* PINRemoteImageProcessorTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINRemoteImageProcessorTask.m; path = Source/Classes/PINRemoteImageProcessorTask.m; sourceTree = "<group>"; };
-		C47FEFDB5F86D06BCECE2BEBFBF3BEF1 /* PINButton+PINRemoteImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PINButton+PINRemoteImage.m"; path = "Source/Classes/Image Categories/PINButton+PINRemoteImage.m"; sourceTree = "<group>"; };
-		C551B76F354C7226CAD3D90A6A6B5879 /* PINRemoteImageDownloadTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINRemoteImageDownloadTask.m; path = Source/Classes/PINRemoteImageDownloadTask.m; sourceTree = "<group>"; };
-		C5EBC0E71A888D6FCD0752A86E15B19C /* PINRemoteImageMemoryContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImageMemoryContainer.h; path = Source/Classes/PINRemoteImageMemoryContainer.h; sourceTree = "<group>"; };
+		9A82F610DA462435F1AF2E40069B468A /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		9A96738A124145BD661891641E09D321 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		9F24A6DBFFEDC06E98C0AFD080F1D24D /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		9FAAAA9369B44B0CACDD1C0E8FCD6F43 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		AC1B1D53218A33DDF03E78CC1D10282D /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
+		AC4FF8277985072AA2414C8092B0E5E8 /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
+		B1D5D1B92B920495205ECC5F01A79B18 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		B1FC992CB7BD5112195C879B7F23ACC8 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDecoder.h; path = SDWebImage/SDWebImageDecoder.h; sourceTree = "<group>"; };
+		B6B2B54D0CB417C9430CB1A07F5B9A14 /* libPods-SHPhotoBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SHPhotoBrowser.a"; path = "libPods-SHPhotoBrowser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C644BAAE82D355E75738D17845B9F2A0 /* Pods-SHPhotoBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SHPhotoBrowser.release.xcconfig"; sourceTree = "<group>"; };
-		D1B8CE6317980150B9B4FF0C4D6DAC33 /* PINRemoteImageProcessorTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImageProcessorTask.h; path = Source/Classes/PINRemoteImageProcessorTask.h; sourceTree = "<group>"; };
-		D2C1C7EA2C0B6126576569BA9C929BF6 /* PINRemoteImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PINRemoteImage.xcconfig; sourceTree = "<group>"; };
-		D50EC3F8BAB38901B280E8BB690CAAD4 /* PINOperationQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINOperationQueue.m; path = Source/PINOperationQueue.m; sourceTree = "<group>"; };
-		D7A33AA43B7807618DCDC15DF69C88B2 /* PINRemoteLock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINRemoteLock.m; path = Source/Classes/PINRemoteLock.m; sourceTree = "<group>"; };
-		D9D1286F7395336E50FF3CA77F67D96A /* PINRemoteImageManagerResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImageManagerResult.h; path = Source/Classes/PINRemoteImageManagerResult.h; sourceTree = "<group>"; };
-		DD849179246BB7C81E7DCFDE3A128330 /* PINCaching.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINCaching.h; path = Source/PINCaching.h; sourceTree = "<group>"; };
-		DE6A7927F6B9FE702649BE1034B94240 /* PINCache.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PINCache.xcconfig; sourceTree = "<group>"; };
-		E3A8804873978C2398C52CCFF2C9C18C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CC6C5BEF90DB5C23F890DDF3AE04E82D /* NSImage+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSImage+WebCache.h"; path = "SDWebImage/NSImage+WebCache.h"; sourceTree = "<group>"; };
+		D0AAD31650A9E6056BF51E6E7F5DC451 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/SDWebImageDownloader.h; sourceTree = "<group>"; };
 		E4FCDE16652B265F82B172C6939D5CCA /* Pods-SHPhotoBrowser-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SHPhotoBrowser-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E5D1FF40317D6508613D1943E3A41B6F /* PINRemoteImageMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteImageMacros.h; path = Source/Classes/PINRemoteImageMacros.h; sourceTree = "<group>"; };
-		E720352AE0AC7ABD6CABB66405CD9D6D /* PINRemoteLock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINRemoteLock.h; path = Source/Classes/PINRemoteLock.h; sourceTree = "<group>"; };
-		EE1991E17781825A4B938D1648B53B01 /* PINCache+PINRemoteImageCaching.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PINCache+PINRemoteImageCaching.m"; path = "Source/Classes/PINCache/PINCache+PINRemoteImageCaching.m"; sourceTree = "<group>"; };
-		F116AC4B506EE60E1411A6E8C7ADEA77 /* PINRemoteImageCallbacks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINRemoteImageCallbacks.m; path = Source/Classes/PINRemoteImageCallbacks.m; sourceTree = "<group>"; };
-		F166DFD28F6F9A15B9DD76EB197892A1 /* PINAnimatedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINAnimatedImage.m; path = Source/Classes/PINAnimatedImage.m; sourceTree = "<group>"; };
-		F62BB3BC3142EE56925B1023FC8D026C /* PINRemoteImageManagerResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINRemoteImageManagerResult.m; path = Source/Classes/PINRemoteImageManagerResult.m; sourceTree = "<group>"; };
-		F6C7127C66635C61EE3BB877B3B1E738 /* PINCache+PINRemoteImageCaching.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PINCache+PINRemoteImageCaching.h"; path = "Source/Classes/PINCache/PINCache+PINRemoteImageCaching.h"; sourceTree = "<group>"; };
-		F787397BF21488765C1B5B43B7CCC36B /* PINRemoteImageTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINRemoteImageTask.m; path = Source/Classes/PINRemoteImageTask.m; sourceTree = "<group>"; };
-		F856D05EA004AF0742BDB8F7327A7E03 /* PINDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PINDiskCache.h; path = Source/PINDiskCache.h; sourceTree = "<group>"; };
-		F8EC4A7030E19553CB023851AB6C69C0 /* PINAlternateRepresentationProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINAlternateRepresentationProvider.m; path = Source/Classes/PINAlternateRepresentationProvider.m; sourceTree = "<group>"; };
-		FAE83AABC8AC4FBD6F19940BB64D1F0A /* PINRemoteImageCategoryManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINRemoteImageCategoryManager.m; path = Source/Classes/PINRemoteImageCategoryManager.m; sourceTree = "<group>"; };
-		FB48F2DA908EF89A271A76916E4145C9 /* PINResume.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PINResume.m; path = Source/Classes/PINResume.m; sourceTree = "<group>"; };
-		FCBE6E445199B2A4025EDCB6B9BC0D18 /* PINRemoteImageManager+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PINRemoteImageManager+Private.h"; path = "Source/Classes/PINRemoteImageManager+Private.h"; sourceTree = "<group>"; };
-		FDFCD3A04427515D1AF1B773A982AC75 /* PINImageView+PINRemoteImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PINImageView+PINRemoteImage.h"; path = "Source/Classes/Image Categories/PINImageView+PINRemoteImage.h"; sourceTree = "<group>"; };
-		FED5CD3B4FC5C449A3C6D7D1F8DCA95D /* PINCache-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PINCache-dummy.m"; sourceTree = "<group>"; };
+		EBB52CF8D4721A70A8DBB80842994D97 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		F3B0E9B6DF8E857C9B0D2F99FC304F5C /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		F84F89DA463D5F013F47620258BECA2C /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
+		F922701ABE8790DD84BD643BFA3F9D9E /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		FC24B0F8787681FFD86A7FF97C481764 /* UIView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCache.h"; path = "SDWebImage/UIView+WebCache.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0D9EBCD183454C9E297B67C88FDDD070 /* Frameworks */ = {
+		32EC8081474CF41896A4B0C26B779B59 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B18867069D2C3AC56AC191B49D711DE0 /* Foundation.framework in Frameworks */,
+				FAADBA0E10BBFB9D62B433C2E969AF06 /* Foundation.framework in Frameworks */,
+				4B63BF582148BC36E88938E4199EC1BC /* ImageIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A964770C009BFE1D62AC71A491ECC6B /* Frameworks */ = {
+		779193153A90439289F551652833D76D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BABAE29C7BE1DBE7EB902E1813ED8E3 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5CECDE4F2A26656346E2FEA5A09BF4E9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				655A5F16ED73D92D114C38F691B5AC79 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8FEB7C148DF1E0348325E3638F3B7B8A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C64883D1068ACB319E6863141AE298B9 /* Accelerate.framework in Frameworks */,
-				2A331688FF273B7CE9F0003766B55037 /* Foundation.framework in Frameworks */,
-				488675AB7536FA4ECD856BB0FD918AB5 /* ImageIO.framework in Frameworks */,
-				004611282CCD518AE94E3CAC4C64C39D /* UIKit.framework in Frameworks */,
+				61D625DA8B4A0093C2C73EE01491FE43 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+		0B3A2341D139ED8F608BC1E84218DBDD /* SDWebImage */ = {
 			isa = PBXGroup;
 			children = (
-				8CC76520BBEFAE5C86264977DED30878 /* iOS */,
+				D87149291904346236E59ACD631FBD6B /* Core */,
+				C07A6F66802BE499B63D9B298F0F3416 /* Support Files */,
 			);
-			name = Frameworks;
+			name = SDWebImage;
+			path = SDWebImage;
 			sourceTree = "<group>";
 		};
 		19E63495FC29B4D7174B937436F56949 /* Pods-SHPhotoBrowser */ = {
@@ -297,13 +158,13 @@
 			path = "Target Support Files/Pods-SHPhotoBrowser";
 			sourceTree = "<group>";
 		};
-		247D1797C923CAC4236EC1AE4B71B882 /* PINCache */ = {
+		1FADA36CBBEBF5DF6696194D87183478 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				F6C7127C66635C61EE3BB877B3B1E738 /* PINCache+PINRemoteImageCaching.h */,
-				EE1991E17781825A4B938D1648B53B01 /* PINCache+PINRemoteImageCaching.m */,
+				6CE29CF4FF5C02028C0A06EC0D2A6120 /* Foundation.framework */,
+				635A4BD1CEF7E623C71F97A54BFC3616 /* ImageIO.framework */,
 			);
-			name = PINCache;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		2D9B76368EEF26B59B5C8928A2941294 /* Targets Support Files */ = {
@@ -314,199 +175,91 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		35AB65CBCC60B9A330A105F22DD24FF7 /* Pods */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				731D97A3AEE3714028B19ED242E65D50 /* PINCache */,
-				F385628C51059139DEE49C7FDDED3A37 /* PINOperation */,
-				7762C02E1EC2562A458FDDBFC05DD187 /* PINRemoteImage */,
+				1FADA36CBBEBF5DF6696194D87183478 /* iOS */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		55610C729E429F0C0030B532A12677EF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7211E2672E530D29E60B45F8DDF9F16B /* PINOperation.xcconfig */,
-				145E6550A01AB7AD8D2941D66C7AED5B /* PINOperation-dummy.m */,
-				1B33A90A2DF20CAADA5E71E112F33F8C /* PINOperation-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/PINOperation";
-			sourceTree = "<group>";
-		};
-		5E6C0DBE0B665B57E00BF232DF4ED017 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				125D64FA1471B80C0596C3828E59D4B9 /* libPINCache.a */,
-				26BD43E800515581D99D457DB39D3E52 /* libPINOperation.a */,
-				3B8BA63A561350B4307C013942EAC3AF /* libPINRemoteImage.a */,
-				048DA46A47C359DBDFD2A40C87FE303F /* libPods-SHPhotoBrowser.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7004726BC29BCB8B52E40565FD323476 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				9D22438826151F7907C3229717C4A233 /* PINCache.h */,
-				36B102DCB5A4D2E8D6411EA8BD41B9C5 /* PINCache.m */,
-				4E47970D5E7D2EC09FBD3254DC840427 /* PINCacheMacros.h */,
-				A15F72BE678AFCEE92913A39AF399272 /* PINCacheObjectSubscripting.h */,
-				DD849179246BB7C81E7DCFDE3A128330 /* PINCaching.h */,
-				F856D05EA004AF0742BDB8F7327A7E03 /* PINDiskCache.h */,
-				B2EB374D2D6BAB6691D9BF98A247A0BD /* PINMemoryCache.h */,
-				A00F4CF7F1741411D8DF30E717EF2CA7 /* PINMemoryCache.m */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		731D97A3AEE3714028B19ED242E65D50 /* PINCache */ = {
-			isa = PBXGroup;
-			children = (
-				E7B93E204DD9BCC98A79F734A4976343 /* Arc-exception-safe */,
-				7004726BC29BCB8B52E40565FD323476 /* Core */,
-				E07249DA02AAAE11C18C6CEE0F7153E4 /* Support Files */,
-			);
-			name = PINCache;
-			path = PINCache;
-			sourceTree = "<group>";
-		};
-		7762C02E1EC2562A458FDDBFC05DD187 /* PINRemoteImage */ = {
-			isa = PBXGroup;
-			children = (
-				F930187A3939CB5F3347B236FDDBD073 /* Core */,
-				247D1797C923CAC4236EC1AE4B71B882 /* PINCache */,
-				93B638DDB5B0CEDE68C91170C7680E48 /* Support Files */,
-			);
-			name = PINRemoteImage;
-			path = PINRemoteImage;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				35AB65CBCC60B9A330A105F22DD24FF7 /* Pods */,
-				5E6C0DBE0B665B57E00BF232DF4ED017 /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				BF4B13718B20D23D5B220FA33C2583D8 /* Pods */,
+				8BF80380206C75F98A25A69EFB4E7843 /* Products */,
 				2D9B76368EEF26B59B5C8928A2941294 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8CC76520BBEFAE5C86264977DED30878 /* iOS */ = {
+		8BF80380206C75F98A25A69EFB4E7843 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				567B96ED0940B4D108511568B56E413C /* Accelerate.framework */,
-				179B0182DA75663EABCCCF1ED789C4B7 /* Foundation.framework */,
-				A529CE70122769E174B4434BDE7B69E7 /* ImageIO.framework */,
-				E3A8804873978C2398C52CCFF2C9C18C /* UIKit.framework */,
+				B6B2B54D0CB417C9430CB1A07F5B9A14 /* libPods-SHPhotoBrowser.a */,
+				4AFD7DB34106935146C000147E9AA770 /* libSDWebImage.a */,
 			);
-			name = iOS;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		93B638DDB5B0CEDE68C91170C7680E48 /* Support Files */ = {
+		BF4B13718B20D23D5B220FA33C2583D8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D2C1C7EA2C0B6126576569BA9C929BF6 /* PINRemoteImage.xcconfig */,
-				960806510F29D04899F7FD67D275EC1B /* PINRemoteImage-dummy.m */,
-				98212650F4362B0AAE14A92B8E837284 /* PINRemoteImage-prefix.pch */,
+				0B3A2341D139ED8F608BC1E84218DBDD /* SDWebImage */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/PINRemoteImage";
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		E07249DA02AAAE11C18C6CEE0F7153E4 /* Support Files */ = {
+		C07A6F66802BE499B63D9B298F0F3416 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DE6A7927F6B9FE702649BE1034B94240 /* PINCache.xcconfig */,
-				FED5CD3B4FC5C449A3C6D7D1F8DCA95D /* PINCache-dummy.m */,
-				4DA76933F0E9DC89275EB8D1C08B226C /* PINCache-prefix.pch */,
+				5437AD385EDE551AEDFF150954990560 /* SDWebImage.xcconfig */,
+				63C421E1831E29906D3404BDCA1B2C1B /* SDWebImage-dummy.m */,
+				5498F4E300BC16139F8A6203B7E099F1 /* SDWebImage-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/PINCache";
+			path = "../Target Support Files/SDWebImage";
 			sourceTree = "<group>";
 		};
-		E7B93E204DD9BCC98A79F734A4976343 /* Arc-exception-safe */ = {
+		D87149291904346236E59ACD631FBD6B /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				6424BFDBC085913F3E286D3FF75A3CAE /* PINDiskCache.m */,
-			);
-			name = "Arc-exception-safe";
-			sourceTree = "<group>";
-		};
-		F385628C51059139DEE49C7FDDED3A37 /* PINOperation */ = {
-			isa = PBXGroup;
-			children = (
-				74B492FC3FDF30CF6559370F48C28826 /* PINOperation.h */,
-				12A9E92C3AE25EF4226D80E22C8D2F66 /* PINOperationGroup.h */,
-				3B3C701C39E7D47257B32047195E9A27 /* PINOperationGroup.m */,
-				292811E7370B6B67B682E1807E049B7E /* PINOperationMacros.h */,
-				9387C4A4EC67B747E244D18444F5EA3F /* PINOperationQueue.h */,
-				D50EC3F8BAB38901B280E8BB690CAAD4 /* PINOperationQueue.m */,
-				97A4C4F8DCD076F7D3BA5DFDED975AAC /* PINOperationTypes.h */,
-				55610C729E429F0C0030B532A12677EF /* Support Files */,
-			);
-			name = PINOperation;
-			path = PINOperation;
-			sourceTree = "<group>";
-		};
-		F930187A3939CB5F3347B236FDDBD073 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				36EE4B6B8200E6838D15515600B47CE5 /* NSData+ImageDetectors.h */,
-				668ED5EBC738247FCA49BFE550F382E2 /* NSData+ImageDetectors.m */,
-				7EAE9528FDF029C89970ECB2C99BE144 /* NSURLSessionTask+Timing.h */,
-				28A91B34304AECF40A87343100280369 /* NSURLSessionTask+Timing.m */,
-				93B47B6C61DA0BD18D1238915F26E1BD /* PINAlternateRepresentationProvider.h */,
-				F8EC4A7030E19553CB023851AB6C69C0 /* PINAlternateRepresentationProvider.m */,
-				9F0DBAE1D0F4DCDD74E0C9885C931297 /* PINAnimatedImage.h */,
-				F166DFD28F6F9A15B9DD76EB197892A1 /* PINAnimatedImage.m */,
-				6D09FCFA6E12DB713D42E2829EB6AF2F /* PINAnimatedImageManager.h */,
-				16BED41F06464A2B0BBDDE2FEC075C1B /* PINAnimatedImageManager.m */,
-				097FC3AC076F0ACCEE2E7B0C3DA0F804 /* PINButton+PINRemoteImage.h */,
-				C47FEFDB5F86D06BCECE2BEBFBF3BEF1 /* PINButton+PINRemoteImage.m */,
-				9A54B764AE6DD105EA45BA20BB5BDBD4 /* PINImage+DecodedImage.h */,
-				852FBBF92379D044D5B32AE4329A3B30 /* PINImage+DecodedImage.m */,
-				0E5760FE3973B41D15F886FFF5F18F9C /* PINImage+ScaledImage.h */,
-				2DE139E7BB0C0450FD32AE3E752B75F9 /* PINImage+ScaledImage.m */,
-				5F0B48F665A02787D4E4453C7257D2A3 /* PINImage+WebP.h */,
-				A9732069118D6D74B3680EEE15256119 /* PINImage+WebP.m */,
-				FDFCD3A04427515D1AF1B773A982AC75 /* PINImageView+PINRemoteImage.h */,
-				4DB2E87E1852FAF0092630E3654F6B3C /* PINImageView+PINRemoteImage.m */,
-				78CD0C927EEAAAD56A7B607D6E64290A /* PINProgressiveImage.h */,
-				AAEE7153972C387FCB1BBA0F9F0A1F31 /* PINProgressiveImage.m */,
-				4AEBEFAB05FF891D3FA40B55073CA440 /* PINRemoteImage.h */,
-				92D00B7B5B316666E6CE87D76B399761 /* PINRemoteImageBasicCache.h */,
-				136CA44BCD246916132019B13E73D618 /* PINRemoteImageBasicCache.m */,
-				1DA16C82CE72341423DE989ABD159241 /* PINRemoteImageCaching.h */,
-				ADE64DA4E20D06D337EE23349529F4DD /* PINRemoteImageCallbacks.h */,
-				F116AC4B506EE60E1411A6E8C7ADEA77 /* PINRemoteImageCallbacks.m */,
-				7D877896161ED3C4373290DA1B33F611 /* PINRemoteImageCategoryManager.h */,
-				FAE83AABC8AC4FBD6F19940BB64D1F0A /* PINRemoteImageCategoryManager.m */,
-				250BE6C6F7EBEE48ACD204F468BBED39 /* PINRemoteImageDownloadQueue.h */,
-				987D8C4347BFDA9A0CA6DC5BF16C9FB4 /* PINRemoteImageDownloadQueue.m */,
-				30F4E5301139FF6C938AFD51C85E5FD3 /* PINRemoteImageDownloadTask.h */,
-				C551B76F354C7226CAD3D90A6A6B5879 /* PINRemoteImageDownloadTask.m */,
-				E5D1FF40317D6508613D1943E3A41B6F /* PINRemoteImageMacros.h */,
-				AAE9D0C977ADBFEF25F76ED641C3D6B1 /* PINRemoteImageManager.h */,
-				277044497F5BA116B7512D4F6081CEC6 /* PINRemoteImageManager.m */,
-				FCBE6E445199B2A4025EDCB6B9BC0D18 /* PINRemoteImageManager+Private.h */,
-				D9D1286F7395336E50FF3CA77F67D96A /* PINRemoteImageManagerResult.h */,
-				F62BB3BC3142EE56925B1023FC8D026C /* PINRemoteImageManagerResult.m */,
-				C5EBC0E71A888D6FCD0752A86E15B19C /* PINRemoteImageMemoryContainer.h */,
-				82B8EBAAA20A622D19E286331225BAA5 /* PINRemoteImageMemoryContainer.m */,
-				D1B8CE6317980150B9B4FF0C4D6DAC33 /* PINRemoteImageProcessorTask.h */,
-				B8F3BC4B3191242E95A3796075300312 /* PINRemoteImageProcessorTask.m */,
-				7D90A2DCED97164DECA58543149E8770 /* PINRemoteImageTask.h */,
-				F787397BF21488765C1B5B43B7CCC36B /* PINRemoteImageTask.m */,
-				2458522F8153A5D78329648BDED6F8D4 /* PINRemoteImageTask+Subclassing.h */,
-				E720352AE0AC7ABD6CABB66405CD9D6D /* PINRemoteLock.h */,
-				D7A33AA43B7807618DCDC15DF69C88B2 /* PINRemoteLock.m */,
-				1AB8F62D6ED4F33091A49584D9EA9605 /* PINResume.h */,
-				FB48F2DA908EF89A271A76916E4145C9 /* PINResume.m */,
-				53AB43DB8F38E4DC0C43E0803183D9C3 /* PINURLSessionManager.h */,
-				0C26749747205C7A22E5C1808E441727 /* PINURLSessionManager.m */,
+				151184230168224C23550D1C654C722F /* NSData+ImageContentType.h */,
+				0515B8FFDF02AC747460BF06B7147C92 /* NSData+ImageContentType.m */,
+				CC6C5BEF90DB5C23F890DDF3AE04E82D /* NSImage+WebCache.h */,
+				38144E417F1BCD6B1FAEC6B8717E1E23 /* NSImage+WebCache.m */,
+				0E2890C6456A666BDAAC0FA873AC628D /* SDImageCache.h */,
+				33187D162677C128060029C7359C0024 /* SDImageCache.m */,
+				169F96E9B9B5F19875E606404AF824BE /* SDImageCacheConfig.h */,
+				017851524E3ABDA65B7BF9B37C3D7034 /* SDImageCacheConfig.m */,
+				800D2AB9BD2022E1D6C504CF6566681F /* SDWebImageCompat.h */,
+				AC1B1D53218A33DDF03E78CC1D10282D /* SDWebImageCompat.m */,
+				B1FC992CB7BD5112195C879B7F23ACC8 /* SDWebImageDecoder.h */,
+				8A6E5B273CF39F8FC2FD8786F72729B7 /* SDWebImageDecoder.m */,
+				D0AAD31650A9E6056BF51E6E7F5DC451 /* SDWebImageDownloader.h */,
+				061BD245946E3501DC9722976B6AD69F /* SDWebImageDownloader.m */,
+				9FAAAA9369B44B0CACDD1C0E8FCD6F43 /* SDWebImageDownloaderOperation.h */,
+				7175586325AADB8BA8C4ECB09907EA10 /* SDWebImageDownloaderOperation.m */,
+				AC4FF8277985072AA2414C8092B0E5E8 /* SDWebImageManager.h */,
+				6B2D7436D47BF86BE7F4C22F258A0154 /* SDWebImageManager.m */,
+				1278B5233127A1E722D53F10E7FA5EC8 /* SDWebImageOperation.h */,
+				8FF5AFAC79DED4F0C94D1BB961D2D557 /* SDWebImagePrefetcher.h */,
+				B1D5D1B92B920495205ECC5F01A79B18 /* SDWebImagePrefetcher.m */,
+				F84F89DA463D5F013F47620258BECA2C /* UIButton+WebCache.h */,
+				123A809310FA5938787013915F3D64B4 /* UIButton+WebCache.m */,
+				0ACCB8B450CC4B80A63EE725C41C0B29 /* UIImage+GIF.h */,
+				003ABD753CAF59EF000CA534C832D14D /* UIImage+GIF.m */,
+				8B730BABFE2264BB576806D96D5292B1 /* UIImage+MultiFormat.h */,
+				4BE46DB6FE0E8D812F73130BD83794EB /* UIImage+MultiFormat.m */,
+				9F24A6DBFFEDC06E98C0AFD080F1D24D /* UIImageView+HighlightedWebCache.h */,
+				EBB52CF8D4721A70A8DBB80842994D97 /* UIImageView+HighlightedWebCache.m */,
+				F3B0E9B6DF8E857C9B0D2F99FC304F5C /* UIImageView+WebCache.h */,
+				F922701ABE8790DD84BD643BFA3F9D9E /* UIImageView+WebCache.m */,
+				FC24B0F8787681FFD86A7FF97C481764 /* UIView+WebCache.h */,
+				1F2BB2A6F6DDDD53BC079622F286FF42 /* UIView+WebCache.m */,
+				9A82F610DA462435F1AF2E40069B468A /* UIView+WebCacheOperation.h */,
+				9A96738A124145BD661891641E09D321 /* UIView+WebCacheOperation.m */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -514,142 +267,66 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A6CE0E86407F7C0EB4A02B7DA3FC0786 /* Headers */ = {
+		6650CBF5400CDEFDC62EECFF6AB308D0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CD23321BD5CDE5D62F62C35791E44D4 /* PINCache.h in Headers */,
-				92B52116C3CF993138ED464FB0C7E32B /* PINCacheMacros.h in Headers */,
-				55A664819C40D1DA2A794732B70F546D /* PINCacheObjectSubscripting.h in Headers */,
-				56F5FE8761D96F3C89D999EB8BA550B0 /* PINCaching.h in Headers */,
-				BA7DFC9D008C77913BAD8E6D9B028F45 /* PINDiskCache.h in Headers */,
-				859356F15C1BA693CAE88CCBFF9B28A7 /* PINMemoryCache.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B03F2FCB1555FE4A9276270532A44AC9 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09092231CAB527C5D61A01256A4130C8 /* PINOperation.h in Headers */,
-				4921489B45228BC6DB6E872DB0BCCB0D /* PINOperationGroup.h in Headers */,
-				8322B0609870102A5FCCD650EFE45B69 /* PINOperationMacros.h in Headers */,
-				4887667EA646236217140561954A1AAD /* PINOperationQueue.h in Headers */,
-				852C37EF79097348DC1102B9F8F5A266 /* PINOperationTypes.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EAEC8C87288624BFD992775B6DDCAFDB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3202C2C2441B6450808D03EF8EA44D39 /* NSData+ImageDetectors.h in Headers */,
-				9CC31D3EEA4D17E8D78FC29D8A6EF502 /* NSURLSessionTask+Timing.h in Headers */,
-				5A3BCB8B58C1059AD872CC07C5AABBD3 /* PINAlternateRepresentationProvider.h in Headers */,
-				8B20C3E30E4A4FBD30A1C0FDCB23D110 /* PINAnimatedImage.h in Headers */,
-				1CDD04F1A554D00FFE379ABF1ECCF19C /* PINAnimatedImageManager.h in Headers */,
-				B2F593F013F8F1C4D7B816ED1129EECA /* PINButton+PINRemoteImage.h in Headers */,
-				0D53700346300AA5464C454C2C169BEE /* PINCache+PINRemoteImageCaching.h in Headers */,
-				9CD7430FDF0607742BAFF071C2E0E84B /* PINImage+DecodedImage.h in Headers */,
-				29049B06E42478C094F1859330E2F3D1 /* PINImage+ScaledImage.h in Headers */,
-				1740EDA097D09BF033F4EC2E0570ED45 /* PINImage+WebP.h in Headers */,
-				0185F9864009CB3B0E73041CB091DB46 /* PINImageView+PINRemoteImage.h in Headers */,
-				A714B7BF04B7404AD44DADDBEDCE478D /* PINProgressiveImage.h in Headers */,
-				4404401B7830D34B4F70A66A5BBB1A33 /* PINRemoteImage.h in Headers */,
-				465F92BFCBE5A895094F722F3B66E23B /* PINRemoteImageBasicCache.h in Headers */,
-				1A0B5B0679DE97330A853ABA8B70820F /* PINRemoteImageCaching.h in Headers */,
-				47D2309F05BE9C925E1866CBFB7563B0 /* PINRemoteImageCallbacks.h in Headers */,
-				82A33D210B92F3BBBBEBDF0986C08060 /* PINRemoteImageCategoryManager.h in Headers */,
-				4F05A84E51F6D8084FF8018ACB85FC0C /* PINRemoteImageDownloadQueue.h in Headers */,
-				711A07BD614D297A446AF519F9D6EB06 /* PINRemoteImageDownloadTask.h in Headers */,
-				8D1F6BA998E3B58481D2128C6A3CE4D8 /* PINRemoteImageMacros.h in Headers */,
-				745159C4766ABA33E98D06B8B47C25EE /* PINRemoteImageManager+Private.h in Headers */,
-				C5431FD893EBB58A3B04E980B49B42C0 /* PINRemoteImageManager.h in Headers */,
-				2D85456AF01407746D68743BD4181D09 /* PINRemoteImageManagerResult.h in Headers */,
-				67E2A2D9ED980D2AE429BF3600B7A5CA /* PINRemoteImageMemoryContainer.h in Headers */,
-				E86879792439995BD901B85FB9DB451B /* PINRemoteImageProcessorTask.h in Headers */,
-				E01C701B635E775F3A692286D0FA416D /* PINRemoteImageTask+Subclassing.h in Headers */,
-				ADED6A21B6954ADB4A3B3A17419222C9 /* PINRemoteImageTask.h in Headers */,
-				14DBF83429F6B686E89284AFAE73DC07 /* PINRemoteLock.h in Headers */,
-				5FED350467DC18A0CAF11D784232AE32 /* PINResume.h in Headers */,
-				E009BF97A4F345289074DC77A7E27B8B /* PINURLSessionManager.h in Headers */,
+				089E35A88E5C6D9F8AAD389F4429BF52 /* NSData+ImageContentType.h in Headers */,
+				52A9CC28A77D1FFCB8E2AEB0931BC3E4 /* NSImage+WebCache.h in Headers */,
+				51199907930A283447613B5A47F057C6 /* SDImageCache.h in Headers */,
+				40A65B6E0B7B2349F70CA35DB9D6064D /* SDImageCacheConfig.h in Headers */,
+				C9FC7DC7A54CF93D06E6398770D40406 /* SDWebImageCompat.h in Headers */,
+				09AC742A10A75D9CE52059BBB12CC233 /* SDWebImageDecoder.h in Headers */,
+				2F7102EC271458C611CF037758CBDA85 /* SDWebImageDownloader.h in Headers */,
+				78773A84C6BB8E771EEAE292A6435AE0 /* SDWebImageDownloaderOperation.h in Headers */,
+				7D4354F05E0871B777EE10B8D327EAD3 /* SDWebImageManager.h in Headers */,
+				13989AC1761F2D93B1E3F0FA8EF79C64 /* SDWebImageOperation.h in Headers */,
+				C9F978022373234113852DC4D762E6CC /* SDWebImagePrefetcher.h in Headers */,
+				2A9144E2EEC7000E671CFCDB9EA97738 /* UIButton+WebCache.h in Headers */,
+				BA78AA42293D56B16ACB6E1C6744FEF4 /* UIImage+GIF.h in Headers */,
+				F33C650D0061BBD747696B3BC1DD5DDF /* UIImage+MultiFormat.h in Headers */,
+				AEB453AF80AEBCD9192AD845FE5D451A /* UIImageView+HighlightedWebCache.h in Headers */,
+				60B2F1D581159DA4BD70DAE8C2008A6B /* UIImageView+WebCache.h in Headers */,
+				6CC1F50AAE86027586205DBF16DDF4E0 /* UIView+WebCache.h in Headers */,
+				BA0777E42EC634FC873BE4B4969F77AD /* UIView+WebCacheOperation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7020FA468B15664DBD673D04AD8E5C33 /* PINOperation */ = {
+		7448A35B3B33E32C72B0E7943E7C4D53 /* SDWebImage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95175A7C981BEEEB06A706C4E1F3D413 /* Build configuration list for PBXNativeTarget "PINOperation" */;
+			buildConfigurationList = 6FC0E6F6F379CD714831A2C0E5614B35 /* Build configuration list for PBXNativeTarget "SDWebImage" */;
 			buildPhases = (
-				B05FE41EFE818024FEC8D777EC1ECF4F /* Sources */,
-				0D9EBCD183454C9E297B67C88FDDD070 /* Frameworks */,
-				B03F2FCB1555FE4A9276270532A44AC9 /* Headers */,
+				0222A4F0C3A894D472F2D256CCDD1643 /* Sources */,
+				32EC8081474CF41896A4B0C26B779B59 /* Frameworks */,
+				6650CBF5400CDEFDC62EECFF6AB308D0 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = PINOperation;
-			productName = PINOperation;
-			productReference = 26BD43E800515581D99D457DB39D3E52 /* libPINOperation.a */;
+			name = SDWebImage;
+			productName = SDWebImage;
+			productReference = 4AFD7DB34106935146C000147E9AA770 /* libSDWebImage.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		7A9492F0C84610C72141FFB341D7820D /* PINRemoteImage */ = {
+		B80E1D076DFC6CC1D4B718787A91E824 /* Pods-SHPhotoBrowser */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2116AEED690B43125FE4824BB3B81339 /* Build configuration list for PBXNativeTarget "PINRemoteImage" */;
+			buildConfigurationList = ECF8AAAFE2083A296313F4C2CD35C3B9 /* Build configuration list for PBXNativeTarget "Pods-SHPhotoBrowser" */;
 			buildPhases = (
-				DC17D595B4D1A69B8004C602F63E8F4E /* Sources */,
-				8FEB7C148DF1E0348325E3638F3B7B8A /* Frameworks */,
-				EAEC8C87288624BFD992775B6DDCAFDB /* Headers */,
+				192693D07E7F63BB38E58ABDDA745DA5 /* Sources */,
+				779193153A90439289F551652833D76D /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FB88D43828CF508E1C184E39F79AC317 /* PBXTargetDependency */,
-				D15A064C2361DE7B6C0D9CABF40296A4 /* PBXTargetDependency */,
-			);
-			name = PINRemoteImage;
-			productName = PINRemoteImage;
-			productReference = 3B8BA63A561350B4307C013942EAC3AF /* libPINRemoteImage.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		9EA9296085B52FC634AD162B11F10348 /* Pods-SHPhotoBrowser */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 58DFF60B5E888879470998AB819E98A6 /* Build configuration list for PBXNativeTarget "Pods-SHPhotoBrowser" */;
-			buildPhases = (
-				73E14850CAA6679810138C17D6AC68A0 /* Sources */,
-				5CECDE4F2A26656346E2FEA5A09BF4E9 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				70AE51D1818F07199698D9E0B13AA358 /* PBXTargetDependency */,
-				5028E10052E3674C17782E84F4469DAA /* PBXTargetDependency */,
-				87CB2769035CD879CA0A96DDB166D2B5 /* PBXTargetDependency */,
+				131AD9BD0C851A77A68BC230370E8086 /* PBXTargetDependency */,
 			);
 			name = "Pods-SHPhotoBrowser";
 			productName = "Pods-SHPhotoBrowser";
-			productReference = 048DA46A47C359DBDFD2A40C87FE303F /* libPods-SHPhotoBrowser.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		DE689CAE8DD656C32DF75630C09FA386 /* PINCache */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5F860085ADD13A6A9A2EB574BF0704AD /* Build configuration list for PBXNativeTarget "PINCache" */;
-			buildPhases = (
-				C3F4713E546E29798A617B12AED77925 /* Sources */,
-				2A964770C009BFE1D62AC71A491ECC6B /* Frameworks */,
-				A6CE0E86407F7C0EB4A02B7DA3FC0786 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7D177A62A75059580A79759A84E7222A /* PBXTargetDependency */,
-			);
-			name = PINCache;
-			productName = PINCache;
-			productReference = 125D64FA1471B80C0596C3828E59D4B9 /* libPINCache.a */;
+			productReference = B6B2B54D0CB417C9430CB1A07F5B9A14 /* libPods-SHPhotoBrowser.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -669,238 +346,62 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 5E6C0DBE0B665B57E00BF232DF4ED017 /* Products */;
+			productRefGroup = 8BF80380206C75F98A25A69EFB4E7843 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DE689CAE8DD656C32DF75630C09FA386 /* PINCache */,
-				7020FA468B15664DBD673D04AD8E5C33 /* PINOperation */,
-				7A9492F0C84610C72141FFB341D7820D /* PINRemoteImage */,
-				9EA9296085B52FC634AD162B11F10348 /* Pods-SHPhotoBrowser */,
+				B80E1D076DFC6CC1D4B718787A91E824 /* Pods-SHPhotoBrowser */,
+				7448A35B3B33E32C72B0E7943E7C4D53 /* SDWebImage */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		73E14850CAA6679810138C17D6AC68A0 /* Sources */ = {
+		0222A4F0C3A894D472F2D256CCDD1643 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CFDBE559235CFCB47A89A16FE8504E6 /* Pods-SHPhotoBrowser-dummy.m in Sources */,
+				88848846E9A8EF6AD70321CE7BC5F384 /* NSData+ImageContentType.m in Sources */,
+				4F21E8972F3B6CC32BFD003367BA64EE /* NSImage+WebCache.m in Sources */,
+				2B5DBCF853ACE8E4AB80BBCC679B8836 /* SDImageCache.m in Sources */,
+				51F20891FD7AC533835FDAEB64144107 /* SDImageCacheConfig.m in Sources */,
+				830EB8E664D281F1E1CD4E2259727B8C /* SDWebImage-dummy.m in Sources */,
+				2082316C4F44EBC56594FA97E99D65BC /* SDWebImageCompat.m in Sources */,
+				1B6DF508A8078EA0BDB96643E56B6141 /* SDWebImageDecoder.m in Sources */,
+				F27F4E54AD0E20A7BA87CFB414AD949D /* SDWebImageDownloader.m in Sources */,
+				08E646FF345C45C125A14FA7F6B31BED /* SDWebImageDownloaderOperation.m in Sources */,
+				34DA5E3D0DDBE3345E01CDE0557727FD /* SDWebImageManager.m in Sources */,
+				113BB5F6A3BFDCC09448B2BE84D44342 /* SDWebImagePrefetcher.m in Sources */,
+				FA1713DA5C1B3C26AEC39BCC3669D9EE /* UIButton+WebCache.m in Sources */,
+				299AEFA99929B18F043AEEF32C5FC8B8 /* UIImage+GIF.m in Sources */,
+				CDE2353A5CBFD1789448CDBB822760D8 /* UIImage+MultiFormat.m in Sources */,
+				C7F81B8B68C7E4660539B22EE6790B5F /* UIImageView+HighlightedWebCache.m in Sources */,
+				BCC4F556DE27E7470551129CF6CF9803 /* UIImageView+WebCache.m in Sources */,
+				CC63C1A2815F30C5DF0702850AD98952 /* UIView+WebCache.m in Sources */,
+				84C31727F88CE33F248C353B585FD6CC /* UIView+WebCacheOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B05FE41EFE818024FEC8D777EC1ECF4F /* Sources */ = {
+		192693D07E7F63BB38E58ABDDA745DA5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4620F1419EA35435FEBCD12CA5CCEE0A /* PINOperation-dummy.m in Sources */,
-				4FAA934DF546776E5CB64F5C4E756D1B /* PINOperationGroup.m in Sources */,
-				F5C2BABD0603E6444E40B892C7474931 /* PINOperationQueue.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C3F4713E546E29798A617B12AED77925 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B5D63FD15430541CC1DEF65E32F5947E /* PINCache-dummy.m in Sources */,
-				1FA1F9539CB7507BA97B8FEE6005FD8E /* PINCache.m in Sources */,
-				F3794A9EFFF46137878FD70E13633DB5 /* PINDiskCache.m in Sources */,
-				698EC6F1E6EEC4697DED81179D5DDC86 /* PINMemoryCache.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC17D595B4D1A69B8004C602F63E8F4E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7289CCCD521029F16DDBAD635A1C0189 /* NSData+ImageDetectors.m in Sources */,
-				2FBB817B4DB65572DF29EA86044EE475 /* NSURLSessionTask+Timing.m in Sources */,
-				D4E3033DB8987868C822E810635C75E1 /* PINAlternateRepresentationProvider.m in Sources */,
-				F03CD7FD029294BF850EF805EEBE5E27 /* PINAnimatedImage.m in Sources */,
-				720A48EDA56BDF4904897906D0FAAE16 /* PINAnimatedImageManager.m in Sources */,
-				4BE6A3AD040193F591E62D37D97474A4 /* PINButton+PINRemoteImage.m in Sources */,
-				D0B61DB855987DC7126A83F3EC0C6D04 /* PINCache+PINRemoteImageCaching.m in Sources */,
-				EE683D9D6D370707B629FC2E6CD1826E /* PINImage+DecodedImage.m in Sources */,
-				2C8EA1CFBC3107FFDC584857DBD4B145 /* PINImage+ScaledImage.m in Sources */,
-				2D692523B4E10BF5E211A437B293A699 /* PINImage+WebP.m in Sources */,
-				892C7E78B1934A34A9FD2C2D722E4596 /* PINImageView+PINRemoteImage.m in Sources */,
-				97FAD1EAABCCDEB55A3257D0513B11D4 /* PINProgressiveImage.m in Sources */,
-				0B4010D9C88D95FE0210E336D7F6F329 /* PINRemoteImage-dummy.m in Sources */,
-				C1A75A80A418CA2C919A9B51FCB29C17 /* PINRemoteImageBasicCache.m in Sources */,
-				2103A586A494E5DC9F6C02878107BF43 /* PINRemoteImageCallbacks.m in Sources */,
-				82D89C80EFD1E1D1F68D6F1E5F646450 /* PINRemoteImageCategoryManager.m in Sources */,
-				C5547B78AB79FFD8E60593A1DF06B9FC /* PINRemoteImageDownloadQueue.m in Sources */,
-				5E6B33F9095D118F40C989E05532849B /* PINRemoteImageDownloadTask.m in Sources */,
-				CF499C8B0861FDF8D1210F5AE5E71EB2 /* PINRemoteImageManager.m in Sources */,
-				B7F99EB68A3D6912E20B6996580B388D /* PINRemoteImageManagerResult.m in Sources */,
-				7389C308FAB5351991DE03F5A70F8FD4 /* PINRemoteImageMemoryContainer.m in Sources */,
-				8BEC3C8F670898FD11D079A3FF8D278D /* PINRemoteImageProcessorTask.m in Sources */,
-				76D240A905BB73A7F6B9E5B963D7CDAA /* PINRemoteImageTask.m in Sources */,
-				76034726578F65C240B6611766699B61 /* PINRemoteLock.m in Sources */,
-				678EB4EE875C089E53675C1C4DDA7995 /* PINResume.m in Sources */,
-				E5E8CEA2DDD683F28D3FD32885BB7155 /* PINURLSessionManager.m in Sources */,
+				79D382FFEB9DA4ECA6884A4B39BE8CBA /* Pods-SHPhotoBrowser-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5028E10052E3674C17782E84F4469DAA /* PBXTargetDependency */ = {
+		131AD9BD0C851A77A68BC230370E8086 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = PINOperation;
-			target = 7020FA468B15664DBD673D04AD8E5C33 /* PINOperation */;
-			targetProxy = 79EDE60B6A5A7E20285282ED9FA2915F /* PBXContainerItemProxy */;
-		};
-		70AE51D1818F07199698D9E0B13AA358 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PINCache;
-			target = DE689CAE8DD656C32DF75630C09FA386 /* PINCache */;
-			targetProxy = DF5FF1A886565AC7462C4BAAE2427289 /* PBXContainerItemProxy */;
-		};
-		7D177A62A75059580A79759A84E7222A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PINOperation;
-			target = 7020FA468B15664DBD673D04AD8E5C33 /* PINOperation */;
-			targetProxy = 64168CCC034DAEF1AAE0024AA49EE291 /* PBXContainerItemProxy */;
-		};
-		87CB2769035CD879CA0A96DDB166D2B5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PINRemoteImage;
-			target = 7A9492F0C84610C72141FFB341D7820D /* PINRemoteImage */;
-			targetProxy = CAB50400E936159A4A944688258742F9 /* PBXContainerItemProxy */;
-		};
-		D15A064C2361DE7B6C0D9CABF40296A4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PINOperation;
-			target = 7020FA468B15664DBD673D04AD8E5C33 /* PINOperation */;
-			targetProxy = 3C0C570A54DF38D0D81221E283A12677 /* PBXContainerItemProxy */;
-		};
-		FB88D43828CF508E1C184E39F79AC317 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PINCache;
-			target = DE689CAE8DD656C32DF75630C09FA386 /* PINCache */;
-			targetProxy = 1D300E2BF464EC3E5EB56B049A74D9FD /* PBXContainerItemProxy */;
+			name = SDWebImage;
+			target = 7448A35B3B33E32C72B0E7943E7C4D53 /* SDWebImage */;
+			targetProxy = 83C8032D5E05F9695C8D7A277AAC7287 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		07241E57727A45D030E07DD6C9C14A55 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5843AD6E43D757C92E6E41CE13E9C899 /* Pods-SHPhotoBrowser.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		0C66C8D76A39551483D5CCE67BF8B261 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2C1C7EA2C0B6126576569BA9C929BF6 /* PINRemoteImage.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PINRemoteImage/PINRemoteImage-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		1F64A1B1BA0813C536173A9984632AF8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7211E2672E530D29E60B45F8DDF9F16B /* PINOperation.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PINOperation/PINOperation-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		1F8945FBDAB5F2ECAD77EB394D29A855 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2C1C7EA2C0B6126576569BA9C929BF6 /* PINRemoteImage.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PINRemoteImage/PINRemoteImage-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		229261CE08635DCBB56193BD39A02DE5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C644BAAE82D355E75738D17845B9F2A0 /* Pods-SHPhotoBrowser.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		3890D7C92DE120C2BA762135796CFA80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -942,6 +443,29 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56EBAE0382831CA3AB8E778C28286865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5437AD385EDE551AEDFF150954990560 /* SDWebImage.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -993,9 +517,9 @@
 			};
 			name = Debug;
 		};
-		84DDD42D8BA1739BC428DFB9F868A1FA /* Debug */ = {
+		8BFCEE5C19E476931C43893F166C388F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE6A7927F6B9FE702649BE1034B94240 /* PINCache.xcconfig */;
+			baseConfigurationReference = 5437AD385EDE551AEDFF150954990560 /* SDWebImage.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1003,8 +527,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PINCache/PINCache-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -1016,9 +540,32 @@
 			};
 			name = Debug;
 		};
-		85976283F558E6B2BC4F4A59ED046B75 /* Release */ = {
+		CEC73A497D3E5BD286DA4BEE9C2C4773 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE6A7927F6B9FE702649BE1034B94240 /* PINCache.xcconfig */;
+			baseConfigurationReference = 5843AD6E43D757C92E6E41CE13E9C899 /* Pods-SHPhotoBrowser.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DC102F794281AA77F375E5020CA5280B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C644BAAE82D355E75738D17845B9F2A0 /* Pods-SHPhotoBrowser.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1026,54 +573,22 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PINCache/PINCache-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		95B50FBD2CA138C420D747785DA98248 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7211E2672E530D29E60B45F8DDF9F16B /* PINOperation.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PINOperation/PINOperation-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2116AEED690B43125FE4824BB3B81339 /* Build configuration list for PBXNativeTarget "PINRemoteImage" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0C66C8D76A39551483D5CCE67BF8B261 /* Debug */,
-				1F8945FBDAB5F2ECAD77EB394D29A855 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1083,29 +598,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58DFF60B5E888879470998AB819E98A6 /* Build configuration list for PBXNativeTarget "Pods-SHPhotoBrowser" */ = {
+		6FC0E6F6F379CD714831A2C0E5614B35 /* Build configuration list for PBXNativeTarget "SDWebImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07241E57727A45D030E07DD6C9C14A55 /* Debug */,
-				229261CE08635DCBB56193BD39A02DE5 /* Release */,
+				8BFCEE5C19E476931C43893F166C388F /* Debug */,
+				56EBAE0382831CA3AB8E778C28286865 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F860085ADD13A6A9A2EB574BF0704AD /* Build configuration list for PBXNativeTarget "PINCache" */ = {
+		ECF8AAAFE2083A296313F4C2CD35C3B9 /* Build configuration list for PBXNativeTarget "Pods-SHPhotoBrowser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				84DDD42D8BA1739BC428DFB9F868A1FA /* Debug */,
-				85976283F558E6B2BC4F4A59ED046B75 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		95175A7C981BEEEB06A706C4E1F3D413 /* Build configuration list for PBXNativeTarget "PINOperation" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				95B50FBD2CA138C420D747785DA98248 /* Debug */,
-				1F64A1B1BA0813C536173A9984632AF8 /* Release */,
+				CEC73A497D3E5BD286DA4BEE9C2C4773 /* Debug */,
+				DC102F794281AA77F375E5020CA5280B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

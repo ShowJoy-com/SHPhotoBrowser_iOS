@@ -1,29 +1,14 @@
 PODS:
-  - PINCache (3.0.1-beta.4):
-    - PINCache/Arc-exception-safe (= 3.0.1-beta.4)
-    - PINCache/Core (= 3.0.1-beta.4)
-  - PINCache/Arc-exception-safe (3.0.1-beta.4):
-    - PINCache/Core
-  - PINCache/Core (3.0.1-beta.4):
-    - PINOperation (= 1.0.3)
-  - PINOperation (1.0.3)
-  - PINRemoteImage/Core (3.0.0-beta.10):
-    - PINOperation
-  - PINRemoteImage/iOS (3.0.0-beta.10):
-    - PINRemoteImage/Core
-  - PINRemoteImage/PINCache (3.0.0-beta.10):
-    - PINCache (= 3.0.1-beta.4)
-    - PINRemoteImage/Core
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
 
 DEPENDENCIES:
-  - PINRemoteImage/iOS (~> 3.0.0-beta.8)
-  - PINRemoteImage/PINCache
+  - SDWebImage (~> 4.0.0)
 
 SPEC CHECKSUMS:
-  PINCache: a89c8f609232afac77128557bd12c861844423d7
-  PINOperation: ac23db44796d4a564ecf9b5ea7163510f579b71d
-  PINRemoteImage: 3782605733d65798ab3919e1019ce48e43171126
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: a3a9d71ee4e069410b8e2bf98f83c3d584cd7712
+PODFILE CHECKSUM: 6fbb1dfb30d87ccd68443c6d1d4332122e9a2ce3
 
 COCOAPODS: 1.2.1

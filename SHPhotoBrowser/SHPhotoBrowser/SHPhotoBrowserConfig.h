@@ -7,8 +7,9 @@
 //
 
 #import "SHPhotoBrowserTypeDefine.h"
-#import <PINRemoteImage/PINImageView+PINRemoteImage.h>
-#import <PINRemoteImage/PINCache+PINRemoteImageCaching.h>
+#import <SDWebImage/SDImageCache.h>
+#import <SDWebImage/SDWebImageManager.h>
+#import "UIImageView+WebCache.h"
 
 #define SHPhotoBrowserDebug 1
 //是否开启断言调试模式
