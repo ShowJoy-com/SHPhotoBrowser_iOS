@@ -677,10 +677,13 @@
  */
 - (void)updatePageControlIndex
 {
+    /*
+    //1张图片不显示索引
     if (self.imageCount == 1 && self.hidesForSinglePage == YES) {
         self.indeSHabel.hidden = YES;
         return;
     }
+     */
     if (_browserViewStyle==SHPhotoBrowserViewStyleBlack) {
         NSString *title = [NSString stringWithFormat:@"%zd / %zd",self.currentImageIndex+1,self.imageCount];
         self.indeSHabel.text = title;
