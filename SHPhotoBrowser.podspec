@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "SHPhotoBrowser"
-s.version      = "0.0.9"
+s.version      = "0.0.10"
 s.summary      = "SHPhotoBrowser"
 s.description  = "SHPhotoBrowser ShowJoy"
 s.homepage     = "https://github.com/ShowJoy-com/SHPhotoBrowser_iOS.git"
